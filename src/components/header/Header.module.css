@@ -1,0 +1,38 @@
+header {
+    background-color: #ece8e8;
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 36px;
+    letter-spacing: 2px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.caption {
+    color: rgb(30, 27, 111);
+    font-weight: 500;
+}
+
+.number {
+    font-size: 42px;
+    font-weight: 800;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(30, 27, 111);
+}
+
+.header_nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.header_nav ul li {
+    font-weight: 500;
+}
