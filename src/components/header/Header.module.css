@@ -1,5 +1,5 @@
 header {
-    background-color: #ece8e8;
+    background-color: #dff4ff;
 }
 
 .header {
@@ -9,6 +9,12 @@ header {
     align-items: center;
 }
 
+.header_logo {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
 .logo {
     font-weight: 800;
     font-size: 36px;
@@ -16,9 +22,14 @@ header {
     font-family: 'Rubik', sans-serif;
 }
 
+.logo span {
+    color: #0b5bb0;
+}
+
 .caption {
     color: rgb(30, 27, 111);
     font-weight: 500;
+    font-family: 'Comfortaa', sans-serif;
 }
 
 .number {
@@ -31,8 +42,9 @@ header {
 .header_nav ul {
     display: flex;
     gap: 20px;
+    font-family: 'Comfortaa', sans-serif;
 }
 
 .header_nav ul li {
-    font-weight: 500;
+    font-weight: 600;
 }

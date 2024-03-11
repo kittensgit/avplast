@@ -8,13 +8,13 @@ const Header: FC = () => {
         <header>
             <div className="container">
                 <div className={styles.header}>
-                    <div>
-                        <Link to={'/'}>
-                            <strong className={styles.logo}>AVplast</strong>
-                            <p className={styles.caption}>available plastic</p>
-                        </Link>
-                    </div>
-                    <p className={styles.number}>09X XXX XX XX</p>
+                    <Link className={styles.header_logo} to={'/'}>
+                        <strong className={styles.logo}>
+                            <span>AV</span>plast
+                        </strong>
+                        <p className={styles.caption}>available plastic</p>
+                    </Link>
+                    <p className={styles.number}>092 788 90 22</p>
                     <nav className={styles.header_nav}>
                         <ul>
                             <li>
