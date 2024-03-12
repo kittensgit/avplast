@@ -21,7 +21,7 @@
     object-fit: cover;
 }
 
-.swiper_slide p {
+.swiper_slide figcaption {
     position: absolute;
     left: 0;
     bottom: 0;
