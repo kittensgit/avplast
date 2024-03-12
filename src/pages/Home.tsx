@@ -4,9 +4,9 @@ import HomeContent from 'components/homeContent/HomeContent';
 
 const Home: FC = () => {
     return (
-        <div className="container">
+        <>
             <HomeContent />
-        </div>
+        </>
     );
 };
 
