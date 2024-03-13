@@ -6,3 +6,16 @@
     font-family: 'Rubik', sans-serif;
     color: #0e1147;
 }
+
+.wrapper {
+    padding: 30px;
+}
+
+.benefits_title {
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    color: #0e1147;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
