@@ -47,4 +47,46 @@ header {
 
 .header_nav ul li {
     font-weight: 600;
+    position: relative;
+}
+
+.header_nav ul li a {
+    transition: all 0.2s ease-in;
+}
+
+.header_nav ul li a:hover {
+    color: #0b5bb0;
+}
+
+.header_nav ul li ul {
+    position: absolute;
+    top: 25px;
+    width: 200px;
+    background-color: #b2d8ed;
+    border-radius: 20px;
+    z-index: 3;
+    display: none;
+}
+.header_nav ul li ul::before {
+    position: absolute;
+    content: '';
+    top: -5px;
+    left: 18px;
+    width: 30px;
+    height: 30px;
+    background-color: #b2d8ed;
+    transform: rotate(45deg);
+}
+
+.header_nav ul li:hover ul {
+    display: block;
+}
+
+.header_nav ul li ul li {
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid #388be3;
+}
+.header_nav ul li ul li:last-child {
+    border-bottom: none;
 }
