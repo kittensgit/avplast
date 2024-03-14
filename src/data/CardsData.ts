@@ -5,27 +5,27 @@ import pontonnyeSistemy from 'assets/home/pontonnye-sistemy-moduli-plavuchesti-p
 import polimernayaProdukciya from 'assets/home/polimernaya-produkciya-dlya-selskogo-hozyajstva.jpg';
 import plastikovyeEmkosti from 'assets/home/plastikovye-emkosti-baki-bochki.jpg';
 
-const homeData = [
+const cardsData = [
     {
         image: remontPlastikovyhBakov,
         title: 'Ремонт пластиковых баков',
         description:
             'Обследование, ремонт и реставрация пластиковых баков, топливных баков, емкостей, резервуаров, септиков. бассейнов, опрыскивателей как по месту, так и с выездом на объект',
-        link: '/',
+        link: '/remont-plastikovykh-bakov',
     },
     {
         image: izgotovlenieRezervuarovBassejnov,
         title: 'Изготавление резервуаров и бассейнов',
         description:
             'Изготовление резервуаров, бассейнов, гальванических ванн, емкостей для систем водоподготовки, фильтрации, очистки сточных вод — любых конфигураций и объемов',
-        link: '/',
+        link: '/izgotavlenie-rezervuarov-i-basseinov',
     },
     {
         image: rotacionnogoFormovaniya,
         title: 'Производство методом ротационного формования',
         description:
             'Разработка чертежей, подбор материала, производство форм и серийных изделий по техзаданию заказчика методом ротационного формования',
-        link: '/',
+        link: '/proizvodstvo-metodom-rotacionnogo-formovaniya',
     },
     {
         image: pontonnyeSistemy,
@@ -50,4 +50,4 @@ const homeData = [
     },
 ];
 
-export default homeData;
+export default cardsData;

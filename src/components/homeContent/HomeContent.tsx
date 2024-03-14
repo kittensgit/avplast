@@ -1,10 +1,13 @@
 import { FC } from 'react';
 
+import cardsData from 'data/CardsData';
+
+import Cards from '../cards/Cards';
+
 import Slider from './slider/Slider';
-import Cards from './cards/Cards';
+import Benefits from './benefits/Benefits';
 
 import styles from './HomeContent.module.css';
-import Benefits from './benefits/Benefits';
 
 const HomeContent: FC = () => {
     return (
@@ -15,7 +18,7 @@ const HomeContent: FC = () => {
                     Доступные современные технологии производства и эксплутации
                     полимерных изделий
                 </h1>
-                <Cards />
+                <Cards cardsData={cardsData} />
                 <h2 className={styles.benefits_title}>
                     Преумущества работы с нами
                 </h2>

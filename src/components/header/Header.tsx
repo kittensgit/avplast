@@ -21,7 +21,7 @@ const Header: FC = () => {
                                 <Link to={'/'}>Главная</Link>
                             </li>
                             <li>
-                                <a href="!#">Услуги</a>
+                                <Link to={'/services'}>Услуги</Link>
                                 <ul>
                                     <li>
                                         <Link to="/">
