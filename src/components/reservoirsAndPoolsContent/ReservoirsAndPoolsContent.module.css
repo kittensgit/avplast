@@ -1,0 +1,47 @@
+.wrapper {
+    padding: 30px 15px;
+}
+
+.about_wrapper {
+    position: relative;
+}
+
+.about_wrapper::after {
+    position: absolute;
+    content: '';
+    top: 20%;
+    right: 0;
+    background-image: url('assets/icons/mol2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.15;
+    width: 400px;
+    height: 400px;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 36px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.text {
+    padding: 10px;
+    line-height: 130%;
+    font-size: 20px;
+}
+
+.caption {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    padding: 10px 0 20px;
+}
+
+.list {
+    padding: 0 0 0 50px;
+    line-height: 150%;
+    list-style: circle;
+    font-size: 20px;
+}

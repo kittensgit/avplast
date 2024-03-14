@@ -13,6 +13,20 @@ header {
     display: flex;
     flex-direction: column;
     gap: 2px;
+    position: relative;
+}
+
+.header_logo::before {
+    position: absolute;
+    content: '';
+    background-image: url('assets/icons/molecule.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    top: -7px;
+    right: -32px;
+    z-index: 0;
 }
 
 .logo {
@@ -20,16 +34,20 @@ header {
     font-size: 36px;
     letter-spacing: 2px;
     font-family: 'Rubik', sans-serif;
+    color: black;
+    z-index: 1;
 }
 
 .logo span {
     color: #0b5bb0;
+    z-index: 1;
 }
 
 .caption {
     color: #1e1b6f;
     font-weight: 500;
     font-family: 'Comfortaa', sans-serif;
+    z-index: 1;
 }
 
 .number {

@@ -24,17 +24,25 @@ const Header: FC = () => {
                                 <Link to={'/services'}>Услуги</Link>
                                 <ul>
                                     <li>
-                                        <Link to="/">
+                                        <Link to="/remont-plastikovykh-bakov">
                                             Ремонт пластиковых баков
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to={'/'}>
+                                        <Link
+                                            to={
+                                                '/izgotavlenie-rezervuarov-i-basseinov'
+                                            }
+                                        >
                                             Изготавление резервуаров и бассейнов
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to={'/'}>
+                                        <Link
+                                            to={
+                                                '/proizvodstvo-metodom-rotacionnogo-formovaniya'
+                                            }
+                                        >
                                             Производство методом ротационного
                                             формования
                                         </Link>
