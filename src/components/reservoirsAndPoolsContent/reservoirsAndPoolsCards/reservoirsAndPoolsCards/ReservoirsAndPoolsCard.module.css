@@ -17,6 +17,10 @@
     height: 240px;
     object-fit: cover;
     border-radius: 15px;
+    transition: transform 0.3s ease-in;
+}
+.images img:hover {
+    transform: scale(1.05);
 }
 
 .list {

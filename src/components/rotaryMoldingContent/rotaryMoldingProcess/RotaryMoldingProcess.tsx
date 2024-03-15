@@ -12,6 +12,7 @@ const RotaryMoldingProcess: FC = () => {
             </h2>
             {rotaryMoldingSteps.map((step, index) => (
                 <div key={index} className={styles.block}>
+                    <span className={styles.num}>0{index + 1}</span>
                     <ul className={styles.list}>
                         {step.lists.map((item, index) => (
                             <li key={index}>{item}</li>
@@ -22,7 +23,7 @@ const RotaryMoldingProcess: FC = () => {
                             {step.images.slice(0, 2).map((item, index) => (
                                 <div
                                     key={index}
-                                    className={styles.honeycomb_hexagon}
+                                    className={styles.honeycomb_cell}
                                 >
                                     <img
                                         src={item}
@@ -35,7 +36,7 @@ const RotaryMoldingProcess: FC = () => {
                             {step.images.slice(2).map((item, index) => (
                                 <div
                                     key={index}
-                                    className={styles.honeycomb_hexagon}
+                                    className={styles.honeycomb_cell}
                                 >
                                     <img
                                         src={item}
