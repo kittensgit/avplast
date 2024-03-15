@@ -10,9 +10,9 @@
 .about_wrapper::after {
     position: absolute;
     content: '';
-    top: 20%;
+    top: 15%;
     right: 0;
-    background-image: url('assets/icons/mol2.png');
+    background-image: url('assets/icons/mol5.png');
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.15;
@@ -38,4 +38,22 @@
     line-height: 150%;
     list-style: circle;
     font-size: 20px;
+}
+
+.warning {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    background-color: #c0ffec;
+    border: 2px solid #34d9a7;
+    border-radius: 20px;
+    color: #207058;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.warning img {
+    width: 70px;
+    height: 70px;
 }

@@ -1,23 +1,31 @@
-import plastikovyjBassejn from 'assets/reservoirsPools/Plastikovyj-bassejn.jpg';
-import bassejnPeregorodkami from 'assets/reservoirsPools/Bassejn-s-peregorodkami.jpg';
-import plastikovayaVanna from 'assets/reservoirsPools/plastikovaya-vanna.jpg';
-import okrytyjRezervuar from 'assets/reservoirsPools/Okrytyj-plastikovyj-rezervuar.jpg';
-import bakFiltraciiVody from 'assets/reservoirsPools/Bak-dlya-sistemy-filtracii-vody.jpg';
-import pishchevojPromyshlennosti from 'assets/reservoirsPools/Emkosti-dlya-pishchevoj-promyshlennosti.jpg';
-import bakVodopodgotovki from 'assets/reservoirsPools/Bak-dlya-vodopodgotovki.jpg';
-import bakSypuchihVeshchestv from 'assets/reservoirsPools/Bak-dlya-sypuchih-veshchestv.jpg';
-import podzemnogoMontazha from 'assets/reservoirsPools/Rezervuar-dlya-podzemnogo-montazha.jpg';
-import sistemyOchistki from 'assets/reservoirsPools/Sistemy-ochistki-stochnyh-vod.jpg';
-import plastikovyeSeptiki from 'assets/reservoirsPools/Plastikovye-septiki.jpg';
-import plastikovyePogreba from 'assets/reservoirsPools/Plastikovye_pogreba.jpg';
-import listovogoPlastika from 'assets/reservoirsPools/Izdeliya-iz-listovogo-plastika.jpg';
-import listovogoPolipropilena from 'assets/reservoirsPools/Izdeliya-iz-listovogo-polipropilena.jpg';
-import plastikovyjYashchik from 'assets/reservoirsPools/Plastikovyj-yashchik.jpg';
-import plastikovyjKorob from 'assets/reservoirsPools/Plastikovyj-korob.jpg';
-import futerovkaTruboprovodov from 'assets/reservoirsPools/Futerovka-truboprovodov.jpg';
-import futerovkaStalnyh from 'assets/reservoirsPools/Futerovka-stalnyh-rezervuarov.jpg';
-import futerovkaPolimerami from 'assets/reservoirsPools/Futerovka-polimerami.jpg';
-import obshivkaBassejnov from 'assets/reservoirsPools/Obshivka-bassejnov-plastikom.jpg';
+import plastikovyjBassejn from 'assets/services/reservoirsPools/Plastikovyj-bassejn.jpg';
+import bassejnPeregorodkami from 'assets/services/reservoirsPools/Bassejn-s-peregorodkami.jpg';
+import plastikovayaVanna from 'assets/services/reservoirsPools/plastikovaya-vanna.jpg';
+import okrytyjRezervuar from 'assets/services/reservoirsPools/Okrytyj-plastikovyj-rezervuar.jpg';
+import bakFiltraciiVody from 'assets/services/reservoirsPools/Bak-dlya-sistemy-filtracii-vody.jpg';
+import pishchevojPromyshlennosti from 'assets/services/reservoirsPools/Emkosti-dlya-pishchevoj-promyshlennosti.jpg';
+import bakVodopodgotovki from 'assets/services/reservoirsPools/Bak-dlya-vodopodgotovki.jpg';
+import bakSypuchihVeshchestv from 'assets/services/reservoirsPools/Bak-dlya-sypuchih-veshchestv.jpg';
+import podzemnogoMontazha from 'assets/services/reservoirsPools/Rezervuar-dlya-podzemnogo-montazha.jpg';
+import sistemyOchistki from 'assets/services/reservoirsPools/Sistemy-ochistki-stochnyh-vod.jpg';
+import plastikovyeSeptiki from 'assets/services/reservoirsPools/Plastikovye-septiki.jpg';
+import plastikovyePogreba from 'assets/services/reservoirsPools/Plastikovye_pogreba.jpg';
+import listovogoPlastika from 'assets/services/reservoirsPools/Izdeliya-iz-listovogo-plastika.jpg';
+import listovogoPolipropilena from 'assets/services/reservoirsPools/Izdeliya-iz-listovogo-polipropilena.jpg';
+import plastikovyjYashchik from 'assets/services/reservoirsPools/Plastikovyj-yashchik.jpg';
+import plastikovyjKorob from 'assets/services/reservoirsPools/Plastikovyj-korob.jpg';
+import futerovkaTruboprovodov from 'assets/services/reservoirsPools/Futerovka-truboprovodov.jpg';
+import futerovkaStalnyh from 'assets/services/reservoirsPools/Futerovka-stalnyh-rezervuarov.jpg';
+import futerovkaPolimerami from 'assets/services/reservoirsPools/Futerovka-polimerami.jpg';
+import obshivkaBassejnov from 'assets/services/reservoirsPools/Obshivka-bassejnov-plastikom.jpg';
+
+export const reservoirsAndPoolsProperty = [
+    'устойчивость к большинству агрессивных сред',
+    'широкий температурный диапазон от -40С до +90С',
+    'устойчивость к ультрафиолету',
+    'прочность и пластичность',
+    'малый вес',
+];
 
 export const reservoirsAndPoolsData = [
     {

@@ -8,7 +8,7 @@ import Home from 'pages/Home';
 import Services from 'pages/Services';
 import ReservoirsAndPools from 'pages/ReservoirsAndPools';
 import PlasticTanksRepair from 'pages/PlasticTanksRepair';
-import RotationalMoldingProduction from 'pages/RotationalMoldingProduction';
+import RotaryMolding from 'pages/RotaryMolding';
 
 const App: FC = () => {
     return (
@@ -28,7 +28,7 @@ const App: FC = () => {
                     />
                     <Route
                         path="/proizvodstvo-metodom-rotacionnogo-formovaniya"
-                        element={<RotationalMoldingProduction />}
+                        element={<RotaryMolding />}
                     />
                     <Route path="*" element={<div>Not Found Page</div>} />
                 </Routes>

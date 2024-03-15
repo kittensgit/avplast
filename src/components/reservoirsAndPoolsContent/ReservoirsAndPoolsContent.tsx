@@ -1,5 +1,7 @@
 import { FC } from 'react';
 
+import { reservoirsAndPoolsProperty } from 'data/ReservoirsPoolsData';
+
 import ReservoirsAndPoolsCards from './reservoirsAndPoolsCards/ReservoirsAndPoolsCards';
 
 import styles from './ReservoirsAndPoolsContent.module.css';
@@ -19,11 +21,9 @@ const ReservoirsAndPoolsContent: FC = () => {
                     наличию у них таких уникальных свойств как:
                 </p>
                 <ul className={styles.list}>
-                    <li>устойчивость к большинству агрессивных сред</li>
-                    <li>широкий температурный диапазон от -40С до +90С</li>
-                    <li>устойчивость к ультрафиолету</li>
-                    <li>прочность и пластичность</li>
-                    <li>малый вес</li>
+                    {reservoirsAndPoolsProperty.map((item, index) => (
+                        <li key={index}>{item}</li>
+                    ))}
                 </ul>
                 <p className={styles.text}>
                     Все изделия могут производиться из специального
