@@ -53,19 +53,31 @@ const Header: FC = () => {
                                 <Link to={'/production'}>Продукция</Link>
                                 <ul>
                                     <li>
-                                        <Link to={''}>
+                                        <Link
+                                            to={
+                                                '/production/pontonnye-sistemy-moduli-plavuchesti-poplavki'
+                                            }
+                                        >
                                             Понтонные системы, модули
                                             плавучести, поплавки
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to={''}>
+                                        <Link
+                                            to={
+                                                '/production/polymer-products-agriculture'
+                                            }
+                                        >
                                             Полимерная продукция для сельского
                                             хозяйства
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to={''}>
+                                        <Link
+                                            to={
+                                                '/production/plastikovye-emkosti-baki-bochki'
+                                            }
+                                        >
                                             Пластиковые емкости, баки, бочки
                                         </Link>
                                     </li>
