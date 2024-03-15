@@ -9,6 +9,8 @@ import Services from 'pages/Services';
 import ReservoirsAndPools from 'pages/ReservoirsAndPools';
 import PlasticTanksRepair from 'pages/PlasticTanksRepair';
 import RotaryMolding from 'pages/RotaryMolding';
+import Production from 'pages/Production';
+import PontoonSystems from 'pages/PontoonSystems';
 
 const App: FC = () => {
     return (
@@ -18,18 +20,25 @@ const App: FC = () => {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/services" element={<Services />} />
+                    <Route path="/production" element={<Production />} />
                     <Route
-                        path="/remont-plastikovykh-bakov"
+                        path="/services/remont-plastikovykh-bakov"
                         element={<PlasticTanksRepair />}
                     />
                     <Route
-                        path="/izgotavlenie-rezervuarov-i-basseinov"
+                        path="/services/izgotavlenie-rezervuarov-i-basseinov"
                         element={<ReservoirsAndPools />}
                     />
                     <Route
-                        path="/proizvodstvo-metodom-rotacionnogo-formovaniya"
+                        path="/services/proizvodstvo-metodom-rotacionnogo-formovaniya"
                         element={<RotaryMolding />}
                     />
+                    <Route
+                        path="/production/pontonnye-sistemy-moduli-plavuchesti-poplavki"
+                        element={<PontoonSystems />}
+                    />
+                    <Route path="/production/polymer-products-agriculture" />
+                    <Route path="/production/plastikovye-emkosti-baki-bochki" />
                     <Route path="*" element={<div>Not Found Page</div>} />
                 </Routes>
             </main>

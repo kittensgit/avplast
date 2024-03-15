@@ -24,14 +24,14 @@ const Header: FC = () => {
                                 <Link to={'/services'}>Услуги</Link>
                                 <ul>
                                     <li>
-                                        <Link to="/remont-plastikovykh-bakov">
+                                        <Link to="/services/remont-plastikovykh-bakov">
                                             Ремонт пластиковых баков
                                         </Link>
                                     </li>
                                     <li>
                                         <Link
                                             to={
-                                                '/izgotavlenie-rezervuarov-i-basseinov'
+                                                '/services/izgotavlenie-rezervuarov-i-basseinov'
                                             }
                                         >
                                             Изготавление резервуаров и бассейнов
@@ -40,7 +40,7 @@ const Header: FC = () => {
                                     <li>
                                         <Link
                                             to={
-                                                '/proizvodstvo-metodom-rotacionnogo-formovaniya'
+                                                '/services/proizvodstvo-metodom-rotacionnogo-formovaniya'
                                             }
                                         >
                                             Производство методом ротационного
@@ -50,7 +50,7 @@ const Header: FC = () => {
                                 </ul>
                             </li>
                             <li>
-                                <a href="!#">Продукция</a>
+                                <Link to={'/production'}>Продукция</Link>
                                 <ul>
                                     <li>
                                         <Link to={''}>
