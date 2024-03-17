@@ -1,9 +1,15 @@
 import { FC } from 'react';
 
 import {
+    buoyancyModulesHigh,
+    buoyancyModulesStandart,
     polyethyleneBenefits,
     rotaryMoldingBenefits,
 } from 'data/PontoonSystemsData';
+
+import factIcon from 'assets/icons/fact.png';
+
+import PontoonSystemsCards from './PontoonSystemsCards/PontoonSystemsCards';
 
 import styles from './PontoonSystemsContent.module.css';
 
@@ -43,6 +49,21 @@ const PontoonSystemsContent: FC = () => {
                         <li key={index}>{item}</li>
                     ))}
                 </ul>
+            </div>
+            <h2 className={styles.caption}>Модули плавучести</h2>
+            <PontoonSystemsCards buoyancyModules={buoyancyModulesStandart} />
+            <h2 className={styles.caption}>
+                Модули плавучести повышенной грузоподъемности
+            </h2>
+            <PontoonSystemsCards buoyancyModules={buoyancyModulesHigh} />
+            <div className={styles.fact}>
+                <img src={factIcon} alt="fact" />
+                <p>
+                    Благодаря специальным закладным элементам, заформованным в
+                    тело модуля, достаточно набора основных бытовых
+                    электроинструментов и пары человек, что бы собрать
+                    практически любую платформу
+                </p>
             </div>
         </div>
     );
