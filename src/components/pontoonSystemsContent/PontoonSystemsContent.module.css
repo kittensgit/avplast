@@ -54,6 +54,8 @@
     background-color: #bae6ff;
     border-radius: 25px;
     gap: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #285d8a;
 }
 
 .fact img {

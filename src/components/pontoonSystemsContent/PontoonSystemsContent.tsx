@@ -9,9 +9,10 @@ import {
 
 import factIcon from 'assets/icons/fact.png';
 
-import PontoonSystemsCards from './PontoonSystemsCards/PontoonSystemsCards';
+import PontoonSystemsCards from './pontoonSystemsCards/PontoonSystemsCards';
 
 import styles from './PontoonSystemsContent.module.css';
+import PontoonSystemsExamples from './pontoonSystemsExamples/PontoonSystemsExamples';
 
 const PontoonSystemsContent: FC = () => {
     return (
@@ -63,6 +64,19 @@ const PontoonSystemsContent: FC = () => {
                     тело модуля, достаточно набора основных бытовых
                     электроинструментов и пары человек, что бы собрать
                     практически любую платформу
+                </p>
+            </div>
+            <h2 className={styles.caption}>
+                Примеры типовых решений на базе плавучих модулей
+            </h2>
+            <PontoonSystemsExamples />
+            <div className={styles.fact}>
+                <img src={factIcon} alt="fact" />
+                <p>
+                    Форма, толщина стенки и особенности материала модулей
+                    плавучести позволяют им выдерживать ледовые обжатия, что
+                    дает возможность не вынимать конструкцию из воды на зимний
+                    период
                 </p>
             </div>
         </div>

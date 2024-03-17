@@ -1,0 +1,37 @@
+.examples {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.example {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.example img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.info h3 {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #285d8a;
+}
+.info ul {
+    font-size: 18px;
+    line-height: 130%;
+}
