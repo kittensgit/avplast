@@ -67,3 +67,46 @@
     font-size: 22px;
     color: #285d8a;
 }
+
+.floats {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    transition: transform 0.3s ease-in;
+}
+
+.floats img {
+    border-radius: 15px;
+    transition: transform 0.3s ease-in;
+}
+
+.floats img:hover {
+    transform: scale(1.05);
+}
+
+.table {
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.link {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 28px;
+    padding-top: 30px;
+    padding-right: 50px;
+    position: relative;
+}
+
+.link::after {
+    position: absolute;
+    content: '';
+    background: url('assets/icons/arrow.png') no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    top: 44%;
+    right: 0;
+}

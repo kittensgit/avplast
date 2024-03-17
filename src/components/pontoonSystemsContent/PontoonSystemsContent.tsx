@@ -8,11 +8,17 @@ import {
 } from 'data/PontoonSystemsData';
 
 import factIcon from 'assets/icons/fact.png';
+import poplavki from 'assets/production/pontoonSystems/plastikovye-poplavki.jpg';
+import ploshchadka from 'assets/production/pontoonSystems/ploshchadka-na-poplavkah.jpg';
+import bui from 'assets/production/pontoonSystems/plastikovye-bui.jpg';
+import poplavkiPonton from 'assets/production/pontoonSystems/poplavki-dlya-pontonov.jpg';
+import pontonPoplavki from 'assets/production/pontoonSystems/ponton-na-plastikovyh-poplavkah.jpg';
+import table from 'assets/production/pontoonSystems/table.png';
 
 import PontoonSystemsCards from './pontoonSystemsCards/PontoonSystemsCards';
+import PontoonSystemsExamples from './pontoonSystemsExamples/PontoonSystemsExamples';
 
 import styles from './PontoonSystemsContent.module.css';
-import PontoonSystemsExamples from './pontoonSystemsExamples/PontoonSystemsExamples';
 
 const PontoonSystemsContent: FC = () => {
     return (
@@ -79,6 +85,26 @@ const PontoonSystemsContent: FC = () => {
                     период
                 </p>
             </div>
+            <h2 className={styles.caption}>Поплавки и поплавковые системы</h2>
+            <p className={styles.text}>
+                Для решения нестандартных задач нами разработана серия
+                пластиковых поплавков различных длин и диаметров.
+            </p>
+            <p className={styles.text}>
+                В некоторых случаях, использование поплавков более удобно, чем
+                использование модулей плавучести.
+            </p>
+            <div className={styles.floats}>
+                <img src={poplavki} alt="поплавки" />
+                <img src={ploshchadka} alt="поплавки" />
+                <img src={bui} alt="поплавки" />
+                <img src={poplavkiPonton} alt="поплавки" />
+                <img src={pontonPoplavki} alt="поплавки" />
+            </div>
+            <img className={styles.table} src={table} alt="таблица" />
+            <a className={styles.link} href="!#">
+                Посмотреть или скачать прайс
+            </a>
         </div>
     );
 };
