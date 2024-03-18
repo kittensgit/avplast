@@ -4,7 +4,6 @@
 
 .about_wrapper {
     position: relative;
-    padding-bottom: 20px;
 }
 
 .about_wrapper::after {
@@ -44,7 +43,7 @@
     font-weight: 700;
     font-size: 32px;
     text-align: center;
-    padding-bottom: 20px;
+    padding: 30px;
 }
 
 .fact {
@@ -54,7 +53,7 @@
     background-color: #bae6ff;
     border-radius: 25px;
     gap: 15px;
-    margin-bottom: 20px;
+    margin-top: 30px;
     border: 1px solid #285d8a;
 }
 

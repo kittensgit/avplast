@@ -16,6 +16,11 @@ import miniZemsnaryad from 'assets/production/pontoonSystems/mini-zemsnaryad.jpg
 import schemaPlavacha from 'assets/production/pontoonSystems/schema_plavacha1.png';
 import plavdacha from 'assets/production/pontoonSystems/plavdacha.jpg';
 
+import decorMol1 from 'assets/icons/card_mol.png';
+import decorMol2 from 'assets/icons/card_mol2.png';
+import decorMol3 from 'assets/icons/card_mol3.png';
+import decorMol4 from 'assets/icons/card_mol4.png';
+
 export const rotaryMoldingBenefits = [
     'возможность получать цельно литые понтоны, без сварных швов, что позволяет выдерживать максимальные нагрузки',
     'возможность подбирать толщину стенки понтона от 4 мм до 20 мм',
@@ -44,6 +49,7 @@ export const buoyancyModulesStandart = [
             'Толщина стенки — 6-7мм',
             'Вес — 12кг',
         ],
+        decorImg: decorMol1,
     },
     {
         title: 'Модули плавучести несущий',
@@ -57,6 +63,7 @@ export const buoyancyModulesStandart = [
             'Толщина стенки — 6-7мм',
             'Вес — 18кг',
         ],
+        decorImg: decorMol2,
     },
 ];
 
@@ -73,6 +80,7 @@ export const buoyancyModulesHigh = [
             'Толщина стенки — 9-10мм',
             'Вес — 46кг',
         ],
+        decorImg: decorMol3,
     },
     {
         title: 'Модули плавучести несущий',
@@ -86,6 +94,7 @@ export const buoyancyModulesHigh = [
             'Толщина стенки — 9-10мм',
             'Вес — 36кг',
         ],
+        decorImg: decorMol4,
     },
 ];
 

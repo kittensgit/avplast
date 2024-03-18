@@ -15,7 +15,11 @@ const PontoonSystemsCards: FC<PontoonSystemsCardsProps> = ({
         <div className={styles.cards}>
             {buoyancyModules.map((itemCard, indexCard) => (
                 <div key={indexCard} className={styles.card}>
-                    <img src={itemCard.image} alt={itemCard.title} />
+                    <img
+                        className={styles.cardImg}
+                        src={itemCard.image}
+                        alt={itemCard.title}
+                    />
                     <div className={styles.info}>
                         <h5>{itemCard.title}</h5>
                         <ul>
@@ -24,6 +28,11 @@ const PontoonSystemsCards: FC<PontoonSystemsCardsProps> = ({
                             ))}
                         </ul>
                     </div>
+                    <img
+                        className={styles.decor}
+                        src={itemCard.decorImg}
+                        alt="decor"
+                    />
                 </div>
             ))}
         </div>

@@ -9,4 +9,5 @@ export interface IBuoyancyModules {
     image: string;
     title: string;
     description: string[];
+    decorImg: string;
 }
