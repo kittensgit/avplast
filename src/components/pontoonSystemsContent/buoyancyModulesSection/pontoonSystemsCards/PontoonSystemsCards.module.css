@@ -8,6 +8,7 @@
 .card {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: 400px;
     align-items: center;
     border: 2px solid #b7dee9;
     border-radius: 25px;

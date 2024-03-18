@@ -2,23 +2,6 @@
     padding: 30px 15px;
 }
 
-.about_wrapper {
-    position: relative;
-}
-
-.about_wrapper::after {
-    position: absolute;
-    content: '';
-    top: 20%;
-    right: 0;
-    background-image: url('assets/icons/mol.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.15;
-    width: 400px;
-    height: 400px;
-}
-
 .title {
     font-weight: 800;
     font-size: 36px;
@@ -65,23 +48,6 @@
 .fact p {
     font-size: 22px;
     color: #285d8a;
-}
-
-.floats {
-    padding: 20px 0;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    transition: transform 0.3s ease-in;
-}
-
-.floats img {
-    border-radius: 15px;
-    transition: transform 0.3s ease-in;
-}
-
-.floats img:hover {
-    transform: scale(1.05);
 }
 
 .table {

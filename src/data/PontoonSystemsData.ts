@@ -21,6 +21,12 @@ import decorMol2 from 'assets/icons/card_mol2.png';
 import decorMol3 from 'assets/icons/card_mol3.png';
 import decorMol4 from 'assets/icons/card_mol4.png';
 
+import poplavki from 'assets/production/pontoonSystems/plastikovye-poplavki.jpg';
+import ploshchadka from 'assets/production/pontoonSystems/ploshchadka-na-poplavkah.jpg';
+import bui from 'assets/production/pontoonSystems/plastikovye-bui.jpg';
+import poplavkiPonton from 'assets/production/pontoonSystems/poplavki-dlya-pontonov.jpg';
+import pontonPoplavki from 'assets/production/pontoonSystems/ponton-na-plastikovyh-poplavkah.jpg';
+
 export const rotaryMoldingBenefits = [
     'возможность получать цельно литые понтоны, без сварных швов, что позволяет выдерживать максимальные нагрузки',
     'возможность подбирать толщину стенки понтона от 4 мм до 20 мм',
@@ -177,4 +183,12 @@ export const pontoonSystemsExamples = [
             'Осадка — до 0.2 м',
         ],
     },
+];
+
+export const floatsImage = [
+    poplavki,
+    ploshchadka,
+    bui,
+    poplavkiPonton,
+    pontonPoplavki,
 ];
