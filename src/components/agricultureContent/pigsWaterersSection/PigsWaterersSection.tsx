@@ -1,6 +1,10 @@
 import { FC } from 'react';
 
-import { pigsWaterersBenefits, pigsWaterersImg } from 'data/AgricultureData';
+import {
+    pigsWaterersBenefits,
+    pigsWaterersBenefitsTechnology,
+    pigsWaterersImg,
+} from 'data/AgricultureData';
 
 import ImagesCollection from '../imagesCollection/ImagesCollection';
 
@@ -28,6 +32,23 @@ const PigsWaterersSection: FC = () => {
                 даже подсосных свиноматок с приплодом.
             </p>
             <h3 className={styles.caption}>Преимущества технологии:</h3>
+            <ul className={styles.list}>
+                {pigsWaterersBenefitsTechnology.map((item, index) => (
+                    <li key={index}>{item}</li>
+                ))}
+            </ul>
+            <h3 className={styles.caption}>Подробнее о принципе работы:</h3>
+            <p className={styles.text}>
+                Через заливную арматуру вода попадает во внутреннюю емкость
+                поилки, а через переливные отверстия в места для поения. Свинье
+                достаточно 1 раз показать, как открывается крышка, закрывающая
+                место для поения, после чего она сама, мордой, открывает крышку
+                и пьет, тем самым, обучает других. По мере выпивания воды, через
+                арматуру пополняется ее уровень. Основной бункер снабжен сливным
+                отверстием в самой нижней точке, для его опорожнения с целью
+                чистки и обслуживания.
+            </p>
+            <h3 className={styles.caption}>Преимущества поилок:</h3>
             <ul className={styles.list}>
                 {pigsWaterersBenefits.map((item, index) => (
                     <li key={index}>{item}</li>

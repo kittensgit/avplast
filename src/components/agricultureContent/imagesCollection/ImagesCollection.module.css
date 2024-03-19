@@ -2,11 +2,14 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    padding-bottom: 10px;
 }
 
 .images img {
     border-radius: 20px;
     transition: transform 0.3s ease-in;
+    height: 210px;
+    object-fit: cover;
 }
 
 .images img:hover {
