@@ -1,6 +1,7 @@
 import opryskivatel from 'assets/production/agriculture/emkost-plastikovaya-na-opryskivatel.jpg';
 import opryskivatel1500 from 'assets/production/agriculture/emkost-opryskivatel-1500-litrov.jpg';
 import samohodnyjOpryskivatel from 'assets/production/agriculture/samohodnyj-opryskivatel.jpg';
+import emkostiOpryskivateli from 'assets/production/agriculture/emkosti-na-opryskivateli.jpg';
 
 import plastikovayaPoilka from 'assets/production/agriculture/poilka-dlya-svinej-plastikovaya.jpg';
 import holodnoeVyrashchivanie from 'assets/production/agriculture/poilka-dlya-svinej-holodnoe-vyrashchivanie.jpg';
@@ -12,11 +13,16 @@ import bunkernayaKormushkaPlastic from 'assets/production/agriculture/bunkernaya
 import kormostolPlastic from 'assets/production/agriculture/kormostol-plastikovyj.jpg';
 import kormushkaPlastic from 'assets/production/agriculture/kormushka-dlya-svinej-plastikovaya.jpg';
 
+import plastikovayaPoilkaKrs from 'assets/production/agriculture/plastikovaya-poilka-dlya-krs.jpg';
+import poilkaPoplavokKrs from 'assets/production/agriculture/poilka-s-poplavkom-dlya-krs.jpg';
+import poilkiKrs from 'assets/production/agriculture/poilki-dlya-krs.jpg';
+import serijnoeIzdelieKrs from 'assets/production/agriculture/serijnoe-izdelie-poilki-krs.jpg';
+
 export const sprayerCapacityImg = [
     opryskivatel,
     opryskivatel1500,
     samohodnyjOpryskivatel,
-    opryskivatel1500,
+    emkostiOpryskivateli,
 ];
 
 export const sprayerCapacityInfo = [
@@ -67,4 +73,30 @@ export const bunkerFeedersPigsBenefits = [
     'Бункер разработан таким образом, чтобы не происходило «зависание» корма.',
     'Объем бункера от 1 до 3 м/куб',
     'Возможность заказать отдельно кормостол без бункера',
+];
+
+export const cattleWaterersImg = [
+    plastikovayaPoilkaKrs,
+    serijnoeIzdelieKrs,
+    poilkaPoplavokKrs,
+    poilkiKrs,
+];
+
+export const cattleWaterersBenefits = [
+    'Двустенная термо-ванна из высококачественного полиэтилена, устойчивого к ультрафиолету, объем 350 литров.',
+    'Сливное отверстие закрывается пробкой.',
+    'Поилка оснащена поплавковым клапаном , обеспечивающим высокую скорость подачи воды – до 50 л/мин.',
+    'Возможен монтаж до трех дополнительных поплавковых клапанов высокого или низкого давления, например для подачи воды, подогреваемой в процессе охлаждения молока.',
+    'Съемная крышка обеспечивает лёгкий доступ к поплавковым клапанам для их регулировки и чистки.',
+    'Дополнительно возможен монтаж сливной трубы (DN 50), обеспечивается заказчиком на месте.',
+    'Поилки могут устанавливаются в ряд и быть соединенными между собой.',
+    'Длина — 2200 мм, ширина — 800 мм.',
+];
+
+export const cattleWaterersOptionalEquipment = [
+    'Поплавковый клапан низкого давления',
+    'Нагревательный панельный элемент (клеится на полость ванной изнутри 220 В, 230 Вт)',
+    'Нагревательный элемент саморегулирующийся для защиты от замерзания водопроводных труб тупикового водопровода,  их длина 2 м (20 Вт),  или 3 м (30 Вт).',
+    'Для оптимального распределения тепла (перед проводкой термошнура) полиэтиленовые трубы следует обмотать алюминиевой изолентой.',
+    'Дополнително возможно подключение поилки к циркуляционному водопроводу.',
 ];

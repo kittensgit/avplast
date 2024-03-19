@@ -4,6 +4,7 @@ import AboutSection from './aboutSection/AboutSection';
 import SprayerCapacitySection from './sprayerCapacitySection.tsx/SprayerCapacitySection';
 import PigsWaterersSection from './pigsWaterersSection/PigsWaterersSection';
 import BunkerFeedersPigsSection from './bunkerFeedersPigsSection/BunkerFeedersPigsSection';
+import CattleWaterersSection from './cattleWaterersSection/CattleWaterersSection';
 
 import styles from './AgricultureContent.module.css';
 
@@ -14,6 +15,7 @@ const AgricultureContent: FC = () => {
             <SprayerCapacitySection />
             <PigsWaterersSection />
             <BunkerFeedersPigsSection />
+            <CattleWaterersSection />
         </div>
     );
 };
