@@ -16,7 +16,6 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
-    transition: transform 0.3s ease-in;
 }
 
 .floats img {

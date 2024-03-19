@@ -5,7 +5,7 @@ import {
     buoyancyModulesStandart,
 } from 'data/PontoonSystemsData';
 
-import PontoonSystemsCards from './pontoonSystemsCards/PontoonSystemsCards';
+import PontoonSystemsCards from './cards/PontoonSystemsCards';
 
 import styles from './BuoyancyModulesSection.module.css';
 

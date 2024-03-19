@@ -3,10 +3,10 @@ import { FC } from 'react';
 import factIcon from 'assets/icons/fact.png';
 import table from 'assets/production/pontoonSystems/table.png';
 
-import PontoonSystemsExamples from './pontoonSystemsExamples/PontoonSystemsExamples';
 import AboutSection from './aboutSection/AboutSection';
 import BuoyancyModulesSection from './buoyancyModulesSection/BuoyancyModulesSection';
 import FloatsSection from './floatsSection/FloatsSection';
+import Examples from './examples/Examples';
 
 import styles from './PontoonSystemsContent.module.css';
 
@@ -27,7 +27,7 @@ const PontoonSystemsContent: FC = () => {
             <h2 className={styles.caption}>
                 Примеры типовых решений на базе плавучих модулей
             </h2>
-            <PontoonSystemsExamples />
+            <Examples />
             <div className={styles.fact}>
                 <img src={factIcon} alt="факт" />
                 <p>

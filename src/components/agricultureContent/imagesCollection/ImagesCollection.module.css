@@ -1,0 +1,14 @@
+.images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.images img {
+    border-radius: 20px;
+    transition: transform 0.3s ease-in;
+}
+
+.images img:hover {
+    transform: scale(1.05);
+}

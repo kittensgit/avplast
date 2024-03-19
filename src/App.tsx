@@ -11,6 +11,7 @@ import PlasticTanksRepair from 'pages/PlasticTanksRepair';
 import RotaryMolding from 'pages/RotaryMolding';
 import Production from 'pages/Production';
 import PontoonSystems from 'pages/PontoonSystems';
+import Agriculture from 'pages/Agriculture';
 
 const App: FC = () => {
     return (
@@ -37,7 +38,10 @@ const App: FC = () => {
                         path="/production/pontonnye-sistemy-moduli-plavuchesti-poplavki"
                         element={<PontoonSystems />}
                     />
-                    <Route path="/production/polymer-products-agriculture" />
+                    <Route
+                        path="/production/polymer-products-agriculture"
+                        element={<Agriculture />}
+                    />
                     <Route path="/production/plastikovye-emkosti-baki-bochki" />
                     <Route path="*" element={<div>Not Found Page</div>} />
                 </Routes>

@@ -2,9 +2,9 @@ import { FC } from 'react';
 
 import { pontoonSystemsExamples } from 'data/PontoonSystemsData';
 
-import styles from './PontoonSystemsExamples.module.css';
+import styles from './Examples.module.css';
 
-const PontoonSystemsExamples: FC = () => {
+const Examples: FC = () => {
     return (
         <div className={styles.examples}>
             {pontoonSystemsExamples.map((example, exampleIndex) => (
@@ -25,4 +25,4 @@ const PontoonSystemsExamples: FC = () => {
     );
 };
 
-export default PontoonSystemsExamples;
+export default Examples;
