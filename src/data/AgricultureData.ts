@@ -18,6 +18,11 @@ import poilkaPoplavokKrs from 'assets/production/agriculture/poilka-s-poplavkom-
 import poilkiKrs from 'assets/production/agriculture/poilki-dlya-krs.jpg';
 import serijnoeIzdelieKrs from 'assets/production/agriculture/serijnoe-izdelie-poilki-krs.jpg';
 
+import poddonySvinomatokSkhema from 'assets/production/agriculture/poddony-dlya-svinomatok-skhema.jpg';
+import poddonOprosa from 'assets/production/agriculture/poddon-dlya-oporosa.jpg';
+import poddonySvinomatok from 'assets/production/agriculture/Poddony-dlya-svinomatok.jpg';
+import plasticPoddonySviney from 'assets/production/agriculture/plastikovye-poddony-dlya-svinej.jpg';
+
 export const sprayerCapacityImg = [
     opryskivatel,
     opryskivatel1500,
@@ -99,4 +104,20 @@ export const cattleWaterersOptionalEquipment = [
     'Нагревательный элемент саморегулирующийся для защиты от замерзания водопроводных труб тупикового водопровода,  их длина 2 м (20 Вт),  или 3 м (30 Вт).',
     'Для оптимального распределения тепла (перед проводкой термошнура) полиэтиленовые трубы следует обмотать алюминиевой изолентой.',
     'Дополнително возможно подключение поилки к циркуляционному водопроводу.',
+];
+
+export const slottedFloorPalletsImg = [
+    poddonySvinomatokSkhema,
+    poddonOprosa,
+    poddonySvinomatok,
+    plasticPoddonySviney,
+];
+
+export const slottedFloorPalletsBenefits = [
+    'Изготовлены из пищевого полиэтилена, устойчивы к любым агрессивным средам.',
+    'Диапазон рабочих температур -30 + 50С',
+    'Объем чаши — 650 литров',
+    'Размер: длина 2400 мм, ширина 1850 мм',
+    'Срок эксплуатации — до 50 лет',
+    'Выходной патрубок — 110 мм (под современные пластиковые фитинги для канализации)',
 ];

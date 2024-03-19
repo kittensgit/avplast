@@ -5,6 +5,7 @@ import SprayerCapacitySection from './sprayerCapacitySection.tsx/SprayerCapacity
 import PigsWaterersSection from './pigsWaterersSection/PigsWaterersSection';
 import BunkerFeedersPigsSection from './bunkerFeedersPigsSection/BunkerFeedersPigsSection';
 import CattleWaterersSection from './cattleWaterersSection/CattleWaterersSection';
+import SlottedFloorPalletsSection from './slottedFloorPalletsSection/SlottedFloorPalletsSection';
 
 import styles from './AgricultureContent.module.css';
 
@@ -16,6 +17,7 @@ const AgricultureContent: FC = () => {
             <PigsWaterersSection />
             <BunkerFeedersPigsSection />
             <CattleWaterersSection />
+            <SlottedFloorPalletsSection />
         </div>
     );
 };
