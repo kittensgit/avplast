@@ -23,6 +23,11 @@ import poddonOprosa from 'assets/production/agriculture/poddon-dlya-oporosa.jpg'
 import poddonySvinomatok from 'assets/production/agriculture/Poddony-dlya-svinomatok.jpg';
 import plasticPoddonySviney from 'assets/production/agriculture/plastikovye-poddony-dlya-svinej.jpg';
 
+import shchelevojPol from 'assets/production/agriculture/shchelevoj-pol.jpg';
+import montazh from 'assets/production/agriculture/Montazh-poly-shchelevye.jpg';
+import shchelevojPolSvinomatok from 'assets/production/agriculture/shchelevoj-pol-dlya-svinomatok.jpg';
+import shchelevojPolSvinarnik from 'assets/production/agriculture/shchelevoj-pol-svinarnik.jpg';
+
 export const sprayerCapacityImg = [
     opryskivatel,
     opryskivatel1500,
@@ -120,4 +125,20 @@ export const slottedFloorPalletsBenefits = [
     'Размер: длина 2400 мм, ширина 1850 мм',
     'Срок эксплуатации — до 50 лет',
     'Выходной патрубок — 110 мм (под современные пластиковые фитинги для канализации)',
+];
+
+export const slottedFloorsImg = [
+    shchelevojPol,
+    montazh,
+    shchelevojPolSvinomatok,
+    shchelevojPolSvinarnik,
+];
+
+export const slottedFloorsBenefits = [
+    'Материал  — сополимер полипропилена, устойчив к агрессивной среде.',
+    'В каждом блоке решетки имеются пазы, что позволяет собирать напольные покрытия любого размера.',
+    'Быстрый и удобный монтаж, небольшой вес, высокая износостойкость, легкгое обслуживание и мытье, отвечают высоким требованиям зоогигиены, современный привлекательный вид, высокие теплоизоляционные свойства (гораздо «теплее» чем аналоги из бетона).',
+    'Сфера применения — содержание подсосных поросят со свиноматкой, поросят на доращивании, а так же для содержания свиней любых возрастных групп.',
+    'Размер: длина — 600 мм, ширина — 400 мм, высота — 90 мм, ширина щели — 9 мм.',
+    'Нагрузка от 350 до 650 кг на блок.',
 ];

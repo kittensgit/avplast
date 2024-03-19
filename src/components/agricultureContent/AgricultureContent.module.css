@@ -1,3 +1,23 @@
 .wrapper {
     padding: 30px 15px;
 }
+
+.link {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 28px;
+    padding-top: 30px;
+    padding-right: 50px;
+    position: relative;
+}
+
+.link::after {
+    position: absolute;
+    content: '';
+    background: url('assets/icons/arrow.png') no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    top: 44%;
+    right: 0;
+}
