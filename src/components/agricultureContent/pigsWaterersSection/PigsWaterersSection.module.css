@@ -17,3 +17,9 @@
     list-style: circle;
     font-size: 20px;
 }
+
+.text {
+    padding: 10px;
+    line-height: 130%;
+    font-size: 20px;
+}
