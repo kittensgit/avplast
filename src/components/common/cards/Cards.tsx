@@ -10,6 +10,9 @@ interface CardsProps {
 }
 
 const Cards: FC<CardsProps> = ({ cardsData }) => {
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+    };
     return (
         <div className={styles.wrapper}>
             {cardsData.map((cardItem, index) => (
@@ -18,7 +21,11 @@ const Cards: FC<CardsProps> = ({ cardsData }) => {
                     <div className={styles.about}>
                         <h4 className={styles.name}>{cardItem.title}</h4>
                         <p className={styles.caption}>{cardItem.description}</p>
-                        <Link className={styles.link} to={cardItem.link}>
+                        <Link
+                            className={styles.link}
+                            to={cardItem.link}
+                            onClick={scrollToTop}
+                        >
                             Узнать больше
                         </Link>
                     </div>

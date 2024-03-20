@@ -2,7 +2,7 @@ import { FC } from 'react';
 
 import cardsData from 'data/CardsData';
 
-import Cards from '../cards/Cards';
+import Cards from '../common/cards/Cards';
 
 import Slider from './slider/Slider';
 import Benefits from './benefits/Benefits';

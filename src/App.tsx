@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import Header from 'components/header/Header';
-import Footer from 'components/footer/Footer';
+import Header from 'components/common/header/Header';
+import Footer from 'components/common/footer/Footer';
 
 import Home from 'pages/Home';
 import Services from 'pages/Services';
@@ -12,6 +12,7 @@ import RotaryMolding from 'pages/RotaryMolding';
 import Production from 'pages/Production';
 import PontoonSystems from 'pages/PontoonSystems';
 import Agriculture from 'pages/Agriculture';
+import PlasticContainers from 'pages/PlasticContainers';
 
 const App: FC = () => {
     return (
@@ -42,7 +43,10 @@ const App: FC = () => {
                         path="/production/polymer-products-agriculture"
                         element={<Agriculture />}
                     />
-                    <Route path="/production/plastikovye-emkosti-baki-bochki" />
+                    <Route
+                        path="/production/plastikovye-emkosti-baki-bochki"
+                        element={<PlasticContainers />}
+                    />
                     <Route path="*" element={<div>Not Found Page</div>} />
                 </Routes>
             </main>
