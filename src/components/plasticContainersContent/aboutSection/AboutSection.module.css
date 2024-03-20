@@ -5,7 +5,7 @@
 .about::after {
     position: absolute;
     content: '';
-    top: 15%;
+    top: 10%;
     right: 0;
     background-image: url('assets/icons/mol4.png');
     background-repeat: no-repeat;

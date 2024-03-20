@@ -1,8 +1,11 @@
 import { FC } from 'react';
 
-import { transportationContainersBenefits } from 'data/PlasticContainers';
+import {
+    transportationContainersBenefits,
+    transportationContainersTableData,
+} from 'data/PlasticContainers';
 
-import tabTranspCont from 'assets/production/plasticContainers/tab-transp-emk.png';
+import Table from '../table/Table';
 
 import styles from './TransportationContainersSection.module.css';
 
@@ -20,11 +23,7 @@ const TransportationContainersSection: FC = () => {
                     <li key={index}>{item}</li>
                 ))}
             </ul>
-            <img
-                className={styles.image}
-                src={tabTranspCont}
-                alt="Емкости для траспортировки"
-            />
+            <Table tableData={transportationContainersTableData} />
         </div>
     );
 };

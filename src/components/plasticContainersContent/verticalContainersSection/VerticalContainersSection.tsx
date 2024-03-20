@@ -1,6 +1,8 @@
 import { FC } from 'react';
 
-import tabVerCont from 'assets/production/plasticContainers/tab-vert-emk.png';
+import { verticalContainersTableData } from 'data/PlasticContainers';
+
+import Table from '../table/Table';
 
 import styles from './VerticalContainersSection.module.css';
 
@@ -18,11 +20,7 @@ const VerticalContainersSection: FC = () => {
                 смотрового люка и резьбовыми отверстиями различных диаметров, в
                 зависимости от конфигурации.
             </p>
-            <img
-                className={styles.image}
-                src={tabVerCont}
-                alt="Емкости вертикальные"
-            />
+            <Table tableData={verticalContainersTableData} />
         </div>
     );
 };

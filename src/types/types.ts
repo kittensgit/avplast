@@ -11,3 +11,14 @@ export interface IBuoyancyModules {
     description: string[];
     decorImg: string;
 }
+
+export interface IPlasticContainersTableItem {
+    name: string;
+    volume: number;
+    height: number;
+    width: number;
+    length: number | string;
+    diametr: number | string;
+    thickness: number;
+    weigth: number;
+}

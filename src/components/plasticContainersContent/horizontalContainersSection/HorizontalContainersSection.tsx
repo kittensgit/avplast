@@ -1,6 +1,8 @@
 import { FC } from 'react';
 
-import tabHorCont from 'assets/production/plasticContainers/tab-gor-emk.png';
+import { horisontalContainersTableData } from 'data/PlasticContainers';
+
+import Table from '../table/Table';
 
 import styles from './HorizontalContainersSection.module.css';
 
@@ -15,11 +17,7 @@ const HorizontalContainersSection: FC = () => {
                 Как правило, имеют более устойчивую форму и, в некоторых
                 случаях, могут быть использованы для перевозки.
             </p>
-            <img
-                className={styles.image}
-                src={tabHorCont}
-                alt="Емкости горизонтальные"
-            />
+            <Table tableData={horisontalContainersTableData} />
         </div>
     );
 };
