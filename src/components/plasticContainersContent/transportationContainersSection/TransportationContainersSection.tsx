@@ -2,10 +2,12 @@ import { FC } from 'react';
 
 import {
     transportationContainersBenefits,
+    transportationContainersSliderData,
     transportationContainersTableData,
 } from 'data/PlasticContainers';
 
 import Table from '../table/Table';
+import Slider from '../slider/Slider';
 
 import styles from './TransportationContainersSection.module.css';
 
@@ -24,6 +26,10 @@ const TransportationContainersSection: FC = () => {
                 ))}
             </ul>
             <Table tableData={transportationContainersTableData} />
+            <Slider
+                sliderData={transportationContainersSliderData}
+                slidesCount={3}
+            />
         </div>
     );
 };

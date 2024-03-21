@@ -2,17 +2,24 @@ import { FC } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
+
 import 'swiper/css';
 
-import sliderData from 'data/SliderData';
+import { ISliderItem } from 'types/types';
 
 import styles from './Slider.module.css';
 
-const Slider: FC = () => {
+interface SliderProps {
+    sliderData: ISliderItem[];
+    slidesCount: number;
+}
+
+const Slider: FC<SliderProps> = ({ sliderData, slidesCount }) => {
     return (
         <Swiper
             className={styles.swiper}
-            slidesPerView={1}
+            slidesPerView={slidesCount}
+            spaceBetween={20}
             autoplay={{
                 delay: 4500,
                 disableOnInteraction: false,

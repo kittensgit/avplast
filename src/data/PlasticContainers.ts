@@ -1,3 +1,40 @@
+import bochka1000 from 'assets/production/plasticContainers/vertical/bochka-plastikovaya-vertikalnaya-uzkaya-1000-litrov.jpg';
+import solenij310 from 'assets/production/plasticContainers/vertical/emkost-dlya-solenij-310-litrov.jpg';
+import solenij from 'assets/production/plasticContainers/vertical/emkost-dlya-solenij.jpg';
+import em2000 from 'assets/production/plasticContainers/vertical/emkost-plastikovaya-vertikalnaya-2000-litrov.jpg';
+import em3100 from 'assets/production/plasticContainers/vertical/emkost-plastikovaya-vertikalnaya-3100-litrov.jpg';
+import em3500 from 'assets/production/plasticContainers/vertical/emkost-plastikovaya-vertikalnaya-3500-litrov.jpg';
+import em7500 from 'assets/production/plasticContainers/vertical/emkost-plastikovaya-vertikalnaya-7500-litrov.jpg';
+import em9000 from 'assets/production/plasticContainers/vertical/emkost-plastikovaya-vertikalnaya-9000-litrov.jpg';
+import em2200 from 'assets/production/plasticContainers/vertical/emkost-plastikovaya-vertikalnaya-nizkaya-2200-litrov.jpg';
+import em4500 from 'assets/production/plasticContainers/vertical/emkost-plastikovaya-vertikalnaya-usilennaya-4500-litrov.jpg';
+import em400 from 'assets/production/plasticContainers/vertical/emksot-plastikovaya-vertikalnaya-400-litrov.jpg';
+import em500 from 'assets/production/plasticContainers/vertical/emksot-plastikovaya-vertikalnaya-500-litrov.jpg';
+import em250 from 'assets/production/plasticContainers/vertical/plastikovaya-emkost-250-litrov.jpg';
+import em570 from 'assets/production/plasticContainers/vertical/plastikovaya-emkost-570-litrov.jpg';
+import em650 from 'assets/production/plasticContainers/vertical/plastikovaya-emkost-650-litrov.jpg';
+import em880 from 'assets/production/plasticContainers/vertical/plastikovaya-emkost-880-litrov.jpg';
+import em1000 from 'assets/production/plasticContainers/vertical/plastikovaya-emkost-vertikalnaya-1000-litrov.jpg';
+import em5500 from 'assets/production/plasticContainers/vertical/plastikovaya-emkost-vertikalnaya-5500-litrov.jpg';
+
+import bak200 from 'assets/production/plasticContainers/horisontal/bak-dlya-dusha-plastikovyj-200-litrov.jpg';
+import bak150 from 'assets/production/plasticContainers/horisontal/bak-dlya-letnego-dusha-plastikovyj-150-litrov.jpg';
+import bak100 from 'assets/production/plasticContainers/horisontal/bak-plastikovyj-dlya-dusha-100-litrov.jpg';
+import b2000 from 'assets/production/plasticContainers/horisontal/bochka-plastikovaya-gorizontalnaya-2000-litrov.jpg';
+import b3000 from 'assets/production/plasticContainers/horisontal/bochka-plastikovaya-gorizontalnaya-3000-litrov.jpg';
+import b500 from 'assets/production/plasticContainers/horisontal/bochka-plastikovaya-gorizontalnaya-500-litrov.jpg';
+import b750 from 'assets/production/plasticContainers/horisontal/bochka-plastikovaya-gorizontalnaya-750-litrov.jpg';
+import emg1000 from 'assets/production/plasticContainers/horisontal/emkost-gorizontalnaya-1000-litrov.jpg';
+import emg1400 from 'assets/production/plasticContainers/horisontal/emkost-gorizontalnaya-1400-litrov.jpg';
+import emg5000 from 'assets/production/plasticContainers/horisontal/emkost-plastikovaya-gorizontalnaya-5000-litrov.jpg';
+
+import emt5000 from 'assets/production/plasticContainers/transport/emkost-agro-5000-litrov.jpg';
+import emt2200 from 'assets/production/plasticContainers/transport/emkost-dlya-perevozki-2200-litrov.jpg';
+import emt3100 from 'assets/production/plasticContainers/transport/emkost-dlya-transportirovki-3100-litrov.jpg';
+import emtKas5500 from 'assets/production/plasticContainers/transport/emkost-dlya-transportirovki-kas-5500-litrov.jpg';
+import emt2000 from 'assets/production/plasticContainers/transport/emkost-plastikovaya-dlya-transportirovki-2000-litrov.jpg';
+import emt5500 from 'assets/production/plasticContainers/transport/emkost-transportirovochnaya-agro-5500-litrov.jpg';
+
 export const plasticContainersPrinciples = [
     'Применение только качественного сырья для производимых и реализуемых емкостей',
     'Максимально разумная цена без занижения качества емкостей',
@@ -409,5 +446,132 @@ export const transportationContainersTableData = [
         diametr: 380,
         thickness: 9,
         weigth: 140,
+    },
+];
+
+export const transportationContainersSliderData = [
+    {
+        image: b500,
+        description: 'Горизонтальная RPH-500',
+    },
+    {
+        image: emg1000,
+        description: 'Горизонтальная RPH-1000',
+    },
+    {
+        image: emt2000,
+        description: 'Транспорт горизонтальная RPH-2000',
+    },
+    {
+        image: emt2200,
+        description: 'Транспорт вертикальная RPV-2200',
+    },
+    {
+        image: b3000,
+        description: 'Горизонтальная RPH-3000',
+    },
+    {
+        image: emt3100,
+        description: 'Транспорт вертикальная RPV-3100',
+    },
+    {
+        image: emt5000,
+        description: 'Транспорт горизонтальная RPH-5000',
+    },
+    {
+        image: emt5500,
+        description: 'Транспорт вертикальная RPV-5500',
+    },
+    {
+        image: emtKas5500,
+        description: 'Транспорт КАС вертикальная RPV-5500',
+    },
+];
+
+export const horisontalContainersSliderData = [
+    { image: bak100, description: 'Прямоугольная RPR-100' },
+    { image: bak150, description: 'Прямоугольная RPR-150' },
+    { image: bak200, description: 'Прямоугольная RPR-200' },
+    { image: b500, description: 'Горизонтальная RPH-500' },
+    { image: b750, description: 'Горизонтальная RPH-750' },
+    { image: emg1000, description: 'Горизонтальная RPH-1000' },
+    { image: emg1400, description: 'Горизонтальная RPH-1400' },
+    { image: b2000, description: 'Горизонтальная RPH-2000' },
+    { image: b3000, description: 'Горизонтальная RPH-3000' },
+    { image: emg5000, description: 'Горизонтальная RPH-5000' },
+];
+
+export const verticalContainersSliderData = [
+    {
+        image: solenij,
+        description: 'Вертикальная RPV-110',
+    },
+    {
+        image: em250,
+        description: 'Вертикальная RPV-250',
+    },
+    {
+        image: solenij310,
+        description: 'Вертикальная АЛ-300',
+    },
+    {
+        image: em400,
+        description: 'Вертикальная RPV-400',
+    },
+    {
+        image: em500,
+        description: 'Вертикальная RPV-500',
+    },
+    {
+        image: em570,
+        description: 'Вертикальная RPV-570',
+    },
+    {
+        image: em650,
+        description: 'Вертикальная RPV-650',
+    },
+    {
+        image: em880,
+        description: 'Вертикальная RPV-880',
+    },
+    {
+        image: em1000,
+        description: 'Вертикальная RPV-1000',
+    },
+    {
+        image: bochka1000,
+        description: 'Вертикальная RPV-1000-S',
+    },
+    {
+        image: em2000,
+        description: 'Вертикальная RPV-2000',
+    },
+    {
+        image: em2200,
+        description: 'Вертикальная RPV-2000N',
+    },
+    {
+        image: em3100,
+        description: 'Вертикальная RPV-3100N',
+    },
+    {
+        image: em3500,
+        description: 'Вертикальная RPV-3500',
+    },
+    {
+        image: em4500,
+        description: 'Вертикальная RPV-4500',
+    },
+    {
+        image: em5500,
+        description: 'Вертикальная RPV-5500',
+    },
+    {
+        image: em7500,
+        description: 'Вертикальная RPV-7500',
+    },
+    {
+        image: em9000,
+        description: 'Вертикальная RPV-9000',
     },
 ];

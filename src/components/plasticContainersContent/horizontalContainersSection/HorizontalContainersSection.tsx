@@ -1,8 +1,12 @@
 import { FC } from 'react';
 
-import { horisontalContainersTableData } from 'data/PlasticContainers';
+import {
+    horisontalContainersSliderData,
+    horisontalContainersTableData,
+} from 'data/PlasticContainers';
 
 import Table from '../table/Table';
+import Slider from '../slider/Slider';
 
 import styles from './HorizontalContainersSection.module.css';
 
@@ -18,6 +22,10 @@ const HorizontalContainersSection: FC = () => {
                 случаях, могут быть использованы для перевозки.
             </p>
             <Table tableData={horisontalContainersTableData} />
+            <Slider
+                sliderData={horisontalContainersSliderData}
+                slidesCount={3}
+            />
         </div>
     );
 };

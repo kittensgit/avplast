@@ -22,3 +22,8 @@ export interface IPlasticContainersTableItem {
     thickness: number;
     weigth: number;
 }
+
+export interface ISliderItem {
+    image: string;
+    description: string;
+}

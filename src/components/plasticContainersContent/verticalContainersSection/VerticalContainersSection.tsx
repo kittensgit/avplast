@@ -1,7 +1,11 @@
 import { FC } from 'react';
 
-import { verticalContainersTableData } from 'data/PlasticContainers';
+import {
+    verticalContainersSliderData,
+    verticalContainersTableData,
+} from 'data/PlasticContainers';
 
+import Slider from '../slider/Slider';
 import Table from '../table/Table';
 
 import styles from './VerticalContainersSection.module.css';
@@ -21,6 +25,7 @@ const VerticalContainersSection: FC = () => {
                 зависимости от конфигурации.
             </p>
             <Table tableData={verticalContainersTableData} />
+            <Slider sliderData={verticalContainersSliderData} slidesCount={4} />
         </div>
     );
 };
