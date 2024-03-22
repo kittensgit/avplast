@@ -13,6 +13,7 @@ import Production from 'pages/Production';
 import PontoonSystems from 'pages/PontoonSystems';
 import Agriculture from 'pages/Agriculture';
 import PlasticContainers from 'pages/PlasticContainers';
+import Contacts from 'pages/Contacts';
 
 const App: FC = () => {
     return (
@@ -23,6 +24,7 @@ const App: FC = () => {
                     <Route path="/" element={<Home />} />
                     <Route path="/services" element={<Services />} />
                     <Route path="/production" element={<Production />} />
+                    <Route path="/contacts" element={<Contacts />} />
                     <Route
                         path="/services/remont-plastikovykh-bakov"
                         element={<PlasticTanksRepair />}

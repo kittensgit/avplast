@@ -87,7 +87,7 @@ const Header: FC = () => {
                                 <a href="!#">Блог</a>
                             </li>
                             <li>
-                                <a href="!#">Контакты</a>
+                                <Link to={'contacts'}>Контакты</Link>
                             </li>
                         </ul>
                     </nav>
