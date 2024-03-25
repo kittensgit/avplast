@@ -1,4 +1,5 @@
 import { FC, useState } from 'react';
+import { motion } from 'framer-motion';
 
 import phoneIcon from 'assets/icons/phone.png';
 import emailIcon from 'assets/icons/email.png';

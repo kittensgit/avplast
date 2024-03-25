@@ -7,7 +7,9 @@ import cardsData from 'data/CardsData';
 const Services: FC = () => {
     return (
         <div className="container">
-            <Cards cardsData={cardsData.slice(0, 3)} />
+            <div className="wrapper">
+                <Cards cardsData={cardsData.slice(0, 3)} />
+            </div>
         </div>
     );
 };

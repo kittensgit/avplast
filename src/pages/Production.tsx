@@ -7,7 +7,9 @@ import cardsData from 'data/CardsData';
 const Production: FC = () => {
     return (
         <div className="container">
-            <Cards cardsData={cardsData.slice(3)} />
+            <div className="wrapper">
+                <Cards cardsData={cardsData.slice(3)} />
+            </div>
         </div>
     );
 };
