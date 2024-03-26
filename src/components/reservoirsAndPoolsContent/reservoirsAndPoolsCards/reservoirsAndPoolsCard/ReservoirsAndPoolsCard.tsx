@@ -48,7 +48,6 @@ const ReservoirsAndPoolsCard: FC<ReservoirsAndPoolsCardProps> = ({
             },
         }),
     };
-
     return (
         <motion.div
             initial="hidden"

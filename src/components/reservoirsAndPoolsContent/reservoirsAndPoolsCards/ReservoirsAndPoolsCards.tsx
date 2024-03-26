@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import { reservoirsAndPoolsData } from 'data/ReservoirsPoolsData';
 
-import ReservoirsAndPoolsCard from './reservoirsAndPoolsCards/ReservoirsAndPoolsCard';
+import ReservoirsAndPoolsCard from './reservoirsAndPoolsCard/ReservoirsAndPoolsCard';
 
 import styles from './ReservoirsAndPoolsCards.module.css';
 

@@ -28,6 +28,8 @@ const ReservoirsAndPoolsContent: FC = () => {
         <motion.div
             initial="hidden"
             whileInView="visible"
+            custom={1}
+            variants={textAnimation}
             className={styles.wrapper}
         >
             <div className={styles.about_wrapper}>
