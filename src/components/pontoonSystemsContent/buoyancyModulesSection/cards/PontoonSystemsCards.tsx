@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { motion } from 'framer-motion';
 
 import { IBuoyancyModules } from 'types/types';
 
@@ -11,10 +12,37 @@ interface PontoonSystemsCardsProps {
 const PontoonSystemsCards: FC<PontoonSystemsCardsProps> = ({
     buoyancyModules,
 }) => {
+    const cardAnimation = {
+        hidden: {
+            y: 10,
+            opacity: 0,
+        },
+        visible: (custom: number) => ({
+            y: 0,
+            opacity: 1,
+            transition: {
+                delay: custom * 0.125,
+                duration: 1,
+                type: 'tween',
+                ease: 'easeInOut',
+            },
+        }),
+    };
     return (
         <div className={styles.cards}>
             {buoyancyModules.map((itemCard, indexCard) => (
-                <div key={indexCard} className={styles.card}>
+                <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{
+                        amount: 0.1,
+                        once: true,
+                    }}
+                    variants={cardAnimation}
+                    custom={indexCard + 1}
+                    key={indexCard}
+                    className={styles.card}
+                >
                     <img
                         className={styles.cardImg}
                         src={itemCard.image}
@@ -33,7 +61,7 @@ const PontoonSystemsCards: FC<PontoonSystemsCardsProps> = ({
                         src={itemCard.decorImg}
                         alt="decor"
                     />
-                </div>
+                </motion.div>
             ))}
         </div>
     );

@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { motion } from 'framer-motion';
 
 import factIcon from 'assets/icons/fact.png';
 import table from 'assets/production/pontoonSystems/table.png';
@@ -11,11 +12,39 @@ import Examples from './examples/Examples';
 import styles from './PontoonSystemsContent.module.css';
 
 const PontoonSystemsContent: FC = () => {
+    const textAnimation = {
+        hidden: {
+            y: -10,
+            opacity: 0,
+        },
+        visible: (custom: number) => ({
+            y: 0,
+            opacity: 1,
+            transition: {
+                delay: custom * 0.1,
+                duration: 1,
+                type: 'tween',
+                ease: 'easeInOut',
+            },
+        }),
+    };
     return (
-        <div className={styles.wrapper}>
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            custom={1}
+            variants={textAnimation}
+            className={styles.wrapper}
+        >
             <AboutSection />
             <BuoyancyModulesSection />
-            <div className={styles.fact}>
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                custom={1}
+                variants={textAnimation}
+                className={styles.fact}
+            >
                 <img src={factIcon} alt="факт" />
                 <p>
                     Благодаря специальным закладным элементам, заформованным в
@@ -23,12 +52,24 @@ const PontoonSystemsContent: FC = () => {
                     электроинструментов и пары человек, что бы собрать
                     практически любую платформу
                 </p>
-            </div>
-            <h2 className={styles.caption}>
+            </motion.div>
+            <motion.h2
+                initial="hidden"
+                whileInView="visible"
+                custom={1}
+                variants={textAnimation}
+                className={styles.caption}
+            >
                 Примеры типовых решений на базе плавучих модулей
-            </h2>
+            </motion.h2>
             <Examples />
-            <div className={styles.fact}>
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                custom={1}
+                variants={textAnimation}
+                className={styles.fact}
+            >
                 <img src={factIcon} alt="факт" />
                 <p>
                     Форма, толщина стенки и особенности материала модулей
@@ -36,13 +77,20 @@ const PontoonSystemsContent: FC = () => {
                     дает возможность не вынимать конструкцию из воды на зимний
                     период
                 </p>
-            </div>
+            </motion.div>
             <FloatsSection />
             <img className={styles.table} src={table} alt="таблица" />
-            <a className={styles.link} href="!#">
+            <motion.a
+                initial="hidden"
+                whileInView="visible"
+                custom={1}
+                variants={textAnimation}
+                className={styles.link}
+                href="!#"
+            >
                 Посмотреть или скачать прайс
-            </a>
-        </div>
+            </motion.a>
+        </motion.div>
     );
 };
 

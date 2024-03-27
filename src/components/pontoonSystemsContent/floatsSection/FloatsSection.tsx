@@ -1,27 +1,62 @@
 import { FC } from 'react';
+import { motion } from 'framer-motion';
 
 import { floatsImage } from 'data/PontoonSystemsData';
 
 import styles from './FloatsSection.module.css';
 
 const FloatsSection: FC = () => {
+    const textAnimation = {
+        hidden: {
+            y: -10,
+            opacity: 0,
+        },
+        visible: (custom: number) => ({
+            y: 0,
+            opacity: 1,
+            transition: {
+                delay: custom * 0.1,
+                duration: 1,
+                type: 'tween',
+                ease: 'easeInOut',
+            },
+        }),
+    };
     return (
-        <div>
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            variants={textAnimation}
+        >
             <h2 className={styles.caption}>Поплавки и поплавковые системы</h2>
-            <p className={styles.text}>
+            <motion.p
+                custom={1}
+                variants={textAnimation}
+                className={styles.text}
+            >
                 Для решения нестандартных задач нами разработана серия
                 пластиковых поплавков различных длин и диаметров.
-            </p>
-            <p className={styles.text}>
+            </motion.p>
+            <motion.p
+                custom={2}
+                variants={textAnimation}
+                className={styles.text}
+            >
                 В некоторых случаях, использование поплавков более удобно, чем
                 использование модулей плавучести.
-            </p>
+            </motion.p>
             <div className={styles.floats}>
                 {floatsImage.map((item, index) => (
-                    <img key={index} src={item} alt="поплавки" />
+                    <motion.img
+                        custom={index + 2}
+                        variants={textAnimation}
+                        key={index}
+                        src={item}
+                        alt="поплавки"
+                    />
                 ))}
             </div>
-        </div>
+        </motion.div>
     );
 };
 
