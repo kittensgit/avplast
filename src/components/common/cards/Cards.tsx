@@ -39,6 +39,7 @@ const Cards: FC<CardsProps> = ({ cardsData }) => {
             },
         }),
     };
+
     return (
         <motion.div variants={cardsAnimation} className={styles.wrapper}>
             {cardsData.map((cardItem, index) => (
@@ -54,18 +55,15 @@ const Cards: FC<CardsProps> = ({ cardsData }) => {
                     key={index}
                     className={styles.card}
                 >
-                    <img src={cardItem.image} alt={cardItem.title} />
-                    <div className={styles.about}>
-                        <h4 className={styles.name}>{cardItem.title}</h4>
-                        <p className={styles.caption}>{cardItem.description}</p>
-                        <Link
-                            className={styles.link}
-                            to={cardItem.link}
-                            onClick={scrollToTop}
-                        >
-                            Узнать больше
-                        </Link>
-                    </div>
+                    <Link to={cardItem.link} onClick={scrollToTop}>
+                        <img src={cardItem.image} alt={cardItem.title} />
+                        <div className={styles.about}>
+                            <h4 className={styles.name}>{cardItem.title}</h4>
+                            <p className={styles.caption}>
+                                {cardItem.description}
+                            </p>
+                        </div>
+                    </Link>
                 </motion.div>
             ))}
         </motion.div>

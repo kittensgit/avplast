@@ -39,21 +39,3 @@
     list-style: circle;
     font-size: 20px;
 }
-
-.warning {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 30px;
-    background-color: #c0ffec;
-    border: 2px solid #34d9a7;
-    border-radius: 20px;
-    color: #207058;
-    font-weight: 600;
-    font-size: 22px;
-}
-
-.warning img {
-    width: 70px;
-    height: 70px;
-}

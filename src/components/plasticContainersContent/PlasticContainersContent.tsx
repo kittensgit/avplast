@@ -14,6 +14,9 @@ const PlasticContainersContent: FC = () => {
             <VerticalContainersSection />
             <HorizontalContainersSection />
             <TransportationContainersSection />
+            <a className={styles.link} href="#!">
+                Посмотреть или скачать прайс
+            </a>
         </div>
     );
 };

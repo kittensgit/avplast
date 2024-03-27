@@ -17,7 +17,7 @@ const ReservoirsAndPoolsContent: FC = () => {
             y: 0,
             opacity: 1,
             transition: {
-                delay: custom * 0.2,
+                delay: custom * 0.1,
                 duration: 1,
                 type: 'tween',
                 ease: 'easeInOut',
