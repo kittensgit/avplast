@@ -52,6 +52,10 @@ const HomeContent: FC = () => {
             <motion.h2
                 initial="hidden"
                 whileInView="visible"
+                viewport={{
+                    amount: 0.1,
+                    once: true,
+                }}
                 variants={textAnimation}
                 custom={1}
                 className={styles.benefits_title}

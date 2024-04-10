@@ -1,56 +1,47 @@
-import { FC } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import Header from 'components/common/header/Header';
 import Footer from 'components/common/footer/Footer';
+import ScrollBtn from 'components/common/scrollBtn/ScrollBtn';
 
-import Home from 'pages/Home';
-import Services from 'pages/Services';
-import ReservoirsAndPools from 'pages/ReservoirsAndPools';
-import PlasticTanksRepair from 'pages/PlasticTanksRepair';
-import RotaryMolding from 'pages/RotaryMolding';
-import Production from 'pages/Production';
-import PontoonSystems from 'pages/PontoonSystems';
-import Agriculture from 'pages/Agriculture';
-import PlasticContainers from 'pages/PlasticContainers';
-import Contacts from 'pages/Contacts';
+import { routes } from 'routes/routes';
 
 const App: FC = () => {
+    const [showScrollButton, setShowScrollButton] = useState<boolean>(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const headerElement = document.getElementsByTagName('header')[0];
+            if (headerElement) {
+                if (window.scrollY > headerElement.clientHeight) {
+                    setShowScrollButton(true);
+                } else {
+                    setShowScrollButton(false);
+                }
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <div className="app">
             <Header />
             <main className="main_wrapper">
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/services" element={<Services />} />
-                    <Route path="/production" element={<Production />} />
-                    <Route path="/contacts" element={<Contacts />} />
-                    <Route
-                        path="/services/remont-plastikovykh-bakov"
-                        element={<PlasticTanksRepair />}
-                    />
-                    <Route
-                        path="/services/izgotavlenie-rezervuarov-i-basseinov"
-                        element={<ReservoirsAndPools />}
-                    />
-                    <Route
-                        path="/services/proizvodstvo-metodom-rotacionnogo-formovaniya"
-                        element={<RotaryMolding />}
-                    />
-                    <Route
-                        path="/production/pontonnye-sistemy-moduli-plavuchesti-poplavki"
-                        element={<PontoonSystems />}
-                    />
-                    <Route
-                        path="/production/polymer-products-agriculture"
-                        element={<Agriculture />}
-                    />
-                    <Route
-                        path="/production/plastikovye-emkosti-baki-bochki"
-                        element={<PlasticContainers />}
-                    />
+                    {routes.map((route, index) => (
+                        <Route
+                            key={index}
+                            path={route.path}
+                            element={<route.component />}
+                        />
+                    ))}
                     <Route path="*" element={<div>Not Found Page</div>} />
                 </Routes>
+                <ScrollBtn showScrollButton={showScrollButton} />
             </main>
             <Footer />
         </div>

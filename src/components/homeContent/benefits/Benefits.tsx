@@ -32,15 +32,12 @@ const Benefits: FC = () => {
     };
 
     return (
-        <motion.div
-            initial="hidden"
-            whileInView="visible"
-            variants={benefitsAnimation}
-            className={styles.benefits}
-        >
+        <div className={styles.benefits}>
             <div className={styles.benefits_content}>
                 {benefitsData.slice(0, 2).map((benefitsItem, index) => (
                     <motion.div
+                        initial="hidden"
+                        whileInView="visible"
                         variants={benefitAnimation}
                         custom={index + 1}
                         viewport={{
@@ -64,6 +61,8 @@ const Benefits: FC = () => {
             <div className={styles.benefits_content}>
                 {benefitsData.slice(2).map((benefitsItem, index) => (
                     <motion.div
+                        initial="hidden"
+                        whileInView="visible"
                         viewport={{
                             amount: 0.1,
                             once: true,
@@ -84,7 +83,7 @@ const Benefits: FC = () => {
                     </motion.div>
                 ))}
             </div>
-        </motion.div>
+        </div>
     );
 };
 
