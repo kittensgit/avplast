@@ -20,13 +20,20 @@ import serijnoeIzdelieKrs from 'assets/production/agriculture/serijnoe-izdelie-p
 
 import poddonySvinomatokSkhema from 'assets/production/agriculture/poddony-dlya-svinomatok-skhema.jpg';
 import poddonOprosa from 'assets/production/agriculture/poddon-dlya-oporosa.jpg';
-import poddonySvinomatok from 'assets/production/agriculture/Poddony-dlya-svinomatok.jpg';
+import poddonySvinomatok from 'assets/production/agriculture/poddony-dlya-svinomatok.jpg';
 import plasticPoddonySviney from 'assets/production/agriculture/plastikovye-poddony-dlya-svinej.jpg';
 
 import shchelevojPol from 'assets/production/agriculture/shchelevoj-pol.jpg';
 import montazh from 'assets/production/agriculture/Montazh-poly-shchelevye.jpg';
 import shchelevojPolSvinomatok from 'assets/production/agriculture/shchelevoj-pol-dlya-svinomatok.jpg';
 import shchelevojPolSvinarnik from 'assets/production/agriculture/shchelevoj-pol-svinarnik.jpg';
+
+export const agricultureBenefits = [
+    'полимерные изделия более долговечны',
+    'полимерные изделия устойчивы к агрессивным средам',
+    'полимерные изделия физически на порядок легче, что упрощает монтаж и эксплуатацию',
+    'полимерные изделия дольше сохраняют презентабельный вид и не требуют покраски',
+];
 
 export const sprayerCapacityImg = [
     opryskivatel,

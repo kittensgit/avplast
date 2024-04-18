@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { motion } from 'framer-motion';
+import { delay, motion } from 'framer-motion';
 
 import {
     buoyancyModulesHigh,
@@ -20,13 +20,14 @@ const BuoyancyModulesSection: FC = () => {
             y: 0,
             opacity: 1,
             transition: {
-                delay: 1.5,
+                delay: 1.1,
                 duration: 1,
                 type: 'tween',
                 ease: 'easeInOut',
             },
         },
     };
+
     const textAnimation = {
         hidden: {
             y: -10,

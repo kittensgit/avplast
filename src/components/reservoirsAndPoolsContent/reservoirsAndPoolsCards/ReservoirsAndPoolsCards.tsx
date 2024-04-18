@@ -17,7 +17,7 @@ const ReservoirsAndPoolsCards: FC = () => {
             y: 0,
             opacity: 1,
             transition: {
-                delay: 2.5,
+                delay: 1.2,
                 duration: 1,
                 type: 'tween',
                 ease: 'easeInOut',

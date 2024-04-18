@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { motion } from 'framer-motion';
 
 import AboutSection from './aboutSection/AboutSection';
 import SprayerCapacitySection from './sprayerCapacitySection.tsx/SprayerCapacitySection';
@@ -11,8 +12,30 @@ import SlottedFloorsSection from './slottedFloorsSection/SlottedFloorsSection';
 import styles from './AgricultureContent.module.css';
 
 const AgricultureContent: FC = () => {
+    const textAnimation = {
+        hidden: {
+            y: -10,
+            opacity: 0,
+        },
+        visible: (custom: number) => ({
+            y: 0,
+            opacity: 1,
+            transition: {
+                delay: custom * 0.1,
+                duration: 1,
+                type: 'tween',
+                ease: 'easeInOut',
+            },
+        }),
+    };
     return (
-        <div className={styles.wrapper}>
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            custom={1}
+            variants={textAnimation}
+            className={styles.wrapper}
+        >
             <AboutSection />
             <SprayerCapacitySection />
             <PigsWaterersSection />
@@ -20,10 +43,21 @@ const AgricultureContent: FC = () => {
             <CattleWaterersSection />
             <SlottedFloorPalletsSection />
             <SlottedFloorsSection />
-            <a className={styles.link} href="#!">
+            <motion.a
+                initial="hidden"
+                whileInView="visible"
+                viewport={{
+                    amount: 0.3,
+                    once: true,
+                }}
+                variants={textAnimation}
+                custom={5}
+                className={styles.link}
+                href="#!"
+            >
                 Посмотреть или скачать прайс
-            </a>
-        </div>
+            </motion.a>
+        </motion.div>
     );
 };
 
