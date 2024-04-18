@@ -37,8 +37,44 @@ const ContactsContent: FC = () => {
         });
     };
 
+    const wrapperAnimation = {
+        hidden: {
+            y: -10,
+            opacity: 0,
+        },
+        visible: {
+            y: 0,
+            opacity: 1,
+            transition: {
+                duration: 1,
+                type: 'tween',
+                ease: 'easeInOut',
+            },
+        },
+    };
+
+    const textAnimation = {
+        hidden: {
+            opacity: 0,
+        },
+        visible: (custom: number) => ({
+            opacity: 1,
+            transition: {
+                delay: custom * 0.1,
+                duration: 1,
+                type: 'tween',
+                ease: 'easeIn',
+            },
+        }),
+    };
+
     return (
-        <div className={styles.wrapper}>
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            variants={wrapperAnimation}
+            className={styles.wrapper}
+        >
             <div className={styles.contact_info}>
                 <div className={styles.contact_item}>
                     <img src={locationIcon} alt="" />
@@ -66,41 +102,60 @@ const ContactsContent: FC = () => {
             </div>
             <div className={styles.cta}>
                 <div className={styles.cta_form}>
-                    <h2>Напишите нам</h2>
+                    <motion.h2 custom={1} variants={textAnimation}>
+                        Напишите нам
+                    </motion.h2>
                     <form>
-                        <input
+                        <motion.input
+                            custom={2}
+                            variants={textAnimation}
                             type="text"
                             name="name"
                             value={userData.name}
                             onChange={handleChange}
                             placeholder="Введите свое имя"
                         />
-                        <input
+                        <motion.input
+                            custom={3}
+                            variants={textAnimation}
                             type="email"
                             name="email"
                             value={userData.email}
                             onChange={handleChange}
                             placeholder="Введите свой email"
                         />
-                        <input
+                        <motion.input
+                            custom={4}
+                            variants={textAnimation}
                             type="tel"
                             name="number"
                             value={userData.number}
                             onChange={handleChange}
                             placeholder="Введите свой телефонный номер"
                         />
-                        <textarea
+                        <motion.textarea
+                            custom={5}
+                            variants={textAnimation}
                             name="message"
                             value={userData.message}
                             onChange={handleChange}
                             placeholder="Введите сообщение"
-                        ></textarea>
-                        <button type="button" onClick={handleSubmit}>
+                        ></motion.textarea>
+                        <motion.button
+                            custom={6}
+                            variants={textAnimation}
+                            type="button"
+                            onClick={handleSubmit}
+                        >
                             Отправить
-                        </button>
+                        </motion.button>
                     </form>
                 </div>
-                <div className={styles.map}>
+                <motion.div
+                    custom={2}
+                    variants={textAnimation}
+                    className={styles.map}
+                >
                     <iframe
                         title="Google Map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d662.3933842191892!2d34.9983349285757!3d48.38792798880297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbfb2f5b99dc79%3A0x5f79a248b53d477a!2z0L_RgNC-0YHQv9C10LrRgiDQkdC-0LPQtNCw0L3QsCDQpdC80LXQu9GM0L3QuNGG0YzQutC-0LPQviwgMTU20JAsINCU0L3RltC_0YDQviwg0JTQvdGW0L_RgNC-0L_QtdGC0YDQvtCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDQ5MDAw!5e0!3m2!1suk!2sua!4v1711110978234!5m2!1suk!2sua"
@@ -108,9 +163,9 @@ const ContactsContent: FC = () => {
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
                     ></iframe>
-                </div>
+                </motion.div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
