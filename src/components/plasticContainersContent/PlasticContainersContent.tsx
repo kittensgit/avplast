@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { motion } from 'framer-motion';
 
 import AboutSection from './aboutSection/AboutSection';
 import VerticalContainersSection from './verticalContainersSection/VerticalContainersSection';
@@ -8,8 +9,30 @@ import TransportationContainersSection from './transportationContainersSection/T
 import styles from './PlasticContainersContent.module.css';
 
 const PlasticContainersContent: FC = () => {
+    const textAnimation = {
+        hidden: {
+            y: -10,
+            opacity: 0,
+        },
+        visible: (custom: number) => ({
+            y: 0,
+            opacity: 1,
+            transition: {
+                delay: custom * 0.1,
+                duration: 1,
+                type: 'tween',
+                ease: 'easeInOut',
+            },
+        }),
+    };
     return (
-        <div className={styles.wrapper}>
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            custom={1}
+            variants={textAnimation}
+            className={styles.wrapper}
+        >
             <AboutSection />
             <VerticalContainersSection />
             <HorizontalContainersSection />
@@ -17,7 +40,7 @@ const PlasticContainersContent: FC = () => {
             <a className={styles.link} href="#!">
                 Посмотреть или скачать прайс
             </a>
-        </div>
+        </motion.div>
     );
 };
 

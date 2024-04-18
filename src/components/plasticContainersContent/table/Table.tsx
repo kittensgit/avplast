@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { motion } from 'framer-motion';
 
 import { IPlasticContainersTableItem } from 'types/types';
 
@@ -9,10 +10,40 @@ interface TableProps {
 }
 
 const Table: FC<TableProps> = ({ tableData }) => {
+    const tableAnimation = {
+        hidden: {
+            y: -10,
+            opacity: 0,
+        },
+        visible: {
+            y: 0,
+            opacity: 1,
+            transition: {
+                delay: 1.2,
+                duration: 1,
+                type: 'tween',
+                ease: 'easeInOut',
+            },
+        },
+    };
+    const textAnimation = {
+        hidden: {
+            opacity: 0,
+        },
+        visible: (custom: number) => ({
+            opacity: 1,
+            transition: {
+                delay: custom * 0.1,
+                duration: 1,
+                type: 'tween',
+                ease: 'easeInOut',
+            },
+        }),
+    };
     return (
-        <table className={styles.table}>
+        <motion.table variants={tableAnimation} className={styles.table}>
             <thead>
-                <tr>
+                <motion.tr custom={1} variants={textAnimation}>
                     <th>Наименование</th>
                     <th>Объем, л</th>
                     <th>Высота, мм</th>
@@ -21,11 +52,21 @@ const Table: FC<TableProps> = ({ tableData }) => {
                     <th>Диаметр горловины, мм</th>
                     <th>Толщина стенки, мм</th>
                     <th>Вес, кг</th>
-                </tr>
+                </motion.tr>
             </thead>
             <tbody>
                 {tableData.map((item, index) => (
-                    <tr key={index}>
+                    <motion.tr
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{
+                            once: true,
+                            amount: 0.05,
+                        }}
+                        variants={textAnimation}
+                        custom={index + 1}
+                        key={index}
+                    >
                         <td>{item.name}</td>
                         <td>{item.volume}</td>
                         <td>{item.height}</td>
@@ -34,10 +75,10 @@ const Table: FC<TableProps> = ({ tableData }) => {
                         <td>{item.diametr}</td>
                         <td>{item.thickness}</td>
                         <td>{item.weigth}</td>
-                    </tr>
+                    </motion.tr>
                 ))}
             </tbody>
-        </table>
+        </motion.table>
     );
 };
 
