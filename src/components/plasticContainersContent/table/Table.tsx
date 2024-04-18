@@ -19,7 +19,7 @@ const Table: FC<TableProps> = ({ tableData }) => {
             y: 0,
             opacity: 1,
             transition: {
-                delay: 1.2,
+                delay: 1,
                 duration: 1,
                 type: 'tween',
                 ease: 'easeInOut',
@@ -33,7 +33,7 @@ const Table: FC<TableProps> = ({ tableData }) => {
         visible: (custom: number) => ({
             opacity: 1,
             transition: {
-                delay: custom * 0.1,
+                delay: custom * 0.075,
                 duration: 1,
                 type: 'tween',
                 ease: 'easeInOut',

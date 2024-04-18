@@ -37,9 +37,20 @@ const PlasticContainersContent: FC = () => {
             <VerticalContainersSection />
             <HorizontalContainersSection />
             <TransportationContainersSection />
-            <a className={styles.link} href="#!">
+            <motion.a
+                initial="hidden"
+                whileInView="visible"
+                viewport={{
+                    amount: 0.3,
+                    once: true,
+                }}
+                variants={textAnimation}
+                custom={2}
+                className={styles.link}
+                href="#!"
+            >
                 Посмотреть или скачать прайс
-            </a>
+            </motion.a>
         </motion.div>
     );
 };
