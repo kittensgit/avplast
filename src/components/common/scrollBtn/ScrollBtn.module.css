@@ -33,3 +33,14 @@
 .scroll:hover::after {
     transform: translate(-50%, -60%) scale(1.05) !important;
 }
+
+@media (max-width: 400px) {
+    .scroll {
+        width: 60px;
+        height: 60px;
+    }
+    .scroll::after {
+        width: 40px;
+        height: 40px;
+    }
+}

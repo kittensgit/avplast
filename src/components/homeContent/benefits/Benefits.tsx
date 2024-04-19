@@ -6,20 +6,6 @@ import benefitsData from 'data/BenefitsData';
 import styles from './Benefits.module.css';
 
 const Benefits: FC = () => {
-    const benefitsAnimation = {
-        hidden: {
-            y: -10,
-            opacity: 0,
-        },
-        visible: {
-            y: 0,
-            opacity: 1,
-            transition: {
-                delay: 1,
-                duration: 1,
-            },
-        },
-    };
     const benefitAnimation = {
         hidden: { y: -30, opacity: 0 },
         visible: (custom: number) => ({
