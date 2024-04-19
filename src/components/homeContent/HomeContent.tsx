@@ -62,7 +62,7 @@ const HomeContent: FC = () => {
             >
                 Преумущества работы с нами
             </motion.h2>
-            <Benefits />
+            {/* <Benefits /> */}
         </motion.div>
     );
 };

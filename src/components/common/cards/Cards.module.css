@@ -50,3 +50,12 @@ img {
     color: #7f8c98;
     line-height: 150%;
 }
+
+@media (max-width: 520px) {
+    .card {
+        height: 450px;
+    }
+    .name {
+        font-size: 21px;
+    }
+}
