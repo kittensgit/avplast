@@ -43,7 +43,7 @@ const App: FC = () => {
                 </Routes>
                 <ScrollBtn showScrollButton={showScrollButton} /> */}
             </main>
-            {/* <Footer /> */}
+            <Footer />
         </div>
     );
 };
