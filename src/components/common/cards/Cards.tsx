@@ -30,9 +30,8 @@ const Cards: FC<CardsProps> = ({ cardsData }) => {
         },
     };
     const cardAnimation = {
-        hidden: { y: -20, opacity: 0 },
+        hidden: { opacity: 0 },
         visible: (custom: number) => ({
-            y: 0,
             opacity: 1,
             transition: {
                 delay: custom * 0.2,
