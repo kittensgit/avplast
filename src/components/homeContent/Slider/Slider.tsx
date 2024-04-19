@@ -14,7 +14,7 @@ const Slider: FC = () => {
             className={styles.swiper}
             slidesPerView={1}
             autoplay={{
-                delay: 4500,
+                delay: 5500,
                 disableOnInteraction: false,
             }}
             grabCursor

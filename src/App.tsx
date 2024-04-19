@@ -31,7 +31,7 @@ const App: FC = () => {
         <div className="app">
             <Header />
             <main className="main_wrapper">
-                {/* <Routes>
+                <Routes>
                     {routes.map((route, index) => (
                         <Route
                             key={index}
@@ -41,7 +41,7 @@ const App: FC = () => {
                     ))}
                     <Route path="*" element={<div>Not Found Page</div>} />
                 </Routes>
-                <ScrollBtn showScrollButton={showScrollButton} /> */}
+                <ScrollBtn showScrollButton={showScrollButton} />
             </main>
             <Footer />
         </div>
