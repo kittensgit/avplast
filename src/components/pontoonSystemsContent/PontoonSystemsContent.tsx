@@ -36,8 +36,8 @@ const PontoonSystemsContent: FC = () => {
             variants={textAnimation}
             className={styles.wrapper}
         >
-            {/* <AboutSection />
-            <BuoyancyModulesSection /> */}
+            <AboutSection />
+            <BuoyancyModulesSection />
             <motion.div
                 initial="hidden"
                 whileInView="visible"
@@ -90,8 +90,8 @@ const PontoonSystemsContent: FC = () => {
                     период
                 </p>
             </motion.div>
-            {/* <FloatsSection />
-            <img className={styles.table} src={table} alt="таблица" />
+            <FloatsSection />
+            {/* <img className={styles.table} src={table} alt="таблица" />
             <motion.a
                 initial="hidden"
                 whileInView="visible"
