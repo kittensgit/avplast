@@ -1,0 +1,80 @@
+.about_wrapper {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.about_wrapper::after {
+    position: absolute;
+    content: '';
+    bottom: 10%;
+    right: 0;
+    background-image: url('assets/icons/mol5.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.15;
+    width: 400px;
+    height: 400px;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 36px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.text {
+    padding: 10px;
+    line-height: 130%;
+    font-size: 20px;
+}
+
+.list {
+    padding: 0 0 0 50px;
+    line-height: 150%;
+    list-style: circle;
+    font-size: 20px;
+}
+
+@media (max-width: 810px) {
+    .title {
+        font-size: 34px;
+    }
+    .about_wrapper::after {
+        opacity: 0.1;
+        bottom: 15%;
+    }
+    .text {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 32px;
+    }
+    .about_wrapper::after {
+        bottom: 22%;
+    }
+    .text {
+        padding: 5px;
+    }
+}
+@media (max-width: 500px) {
+    .title {
+        font-size: 30px;
+    }
+    .about_wrapper::after {
+        bottom: 25%;
+    }
+}
+@media (max-width: 450px) {
+    .title {
+        font-size: 28px;
+    }
+    .about_wrapper::after {
+        bottom: 30%;
+        width: 350px;
+        height: 350px;
+    }
+}
