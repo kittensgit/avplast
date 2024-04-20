@@ -36,8 +36,8 @@ const PontoonSystemsContent: FC = () => {
             variants={textAnimation}
             className={styles.wrapper}
         >
-            <AboutSection />
-            <BuoyancyModulesSection />
+            {/* <AboutSection />
+            <BuoyancyModulesSection /> */}
             <motion.div
                 initial="hidden"
                 whileInView="visible"
@@ -90,7 +90,7 @@ const PontoonSystemsContent: FC = () => {
                     период
                 </p>
             </motion.div>
-            <FloatsSection />
+            {/* <FloatsSection />
             <img className={styles.table} src={table} alt="таблица" />
             <motion.a
                 initial="hidden"
@@ -101,7 +101,7 @@ const PontoonSystemsContent: FC = () => {
                 href="!#"
             >
                 Посмотреть или скачать прайс
-            </motion.a>
+            </motion.a> */}
         </motion.div>
     );
 };

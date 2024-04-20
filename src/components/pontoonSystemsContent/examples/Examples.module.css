@@ -36,3 +36,17 @@
     font-size: 18px;
     line-height: 130%;
 }
+
+@media (max-width: 1020px) {
+    .example {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .info h3,
+    .info ul {
+        text-align: center;
+    }
+}

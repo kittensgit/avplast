@@ -87,10 +87,22 @@
     .caption {
         font-size: 28px;
     }
+    .fact {
+        flex-direction: column;
+    }
+    .fact p {
+        text-align: center;
+    }
 }
 
 @media (max-width: 500px) {
     .caption {
         font-size: 26px;
+    }
+    .fact {
+        padding: 20px;
+    }
+    .fact p {
+        font-size: 19px;
     }
 }
