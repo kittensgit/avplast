@@ -185,6 +185,73 @@ export const pontoonSystemsExamples = [
     },
 ];
 
+export const floatsTableData = [
+    {
+        displacement: 160,
+        load: 110,
+        thickness: 7,
+        weight: 11,
+        diametr: 580,
+        length: 725,
+    },
+    {
+        displacement: 205,
+        load: 140,
+        thickness: 7,
+        weight: 15,
+        diametr: 580,
+        length: 915,
+    },
+    {
+        displacement: 255,
+        load: 180,
+        thickness: 7,
+        weight: 20,
+        diametr: 580,
+        length: 1115,
+    },
+    {
+        displacement: 350,
+        load: 250,
+        thickness: 7,
+        weight: 25,
+        diametr: 580,
+        length: 1500,
+    },
+    {
+        displacement: 400,
+        load: 280,
+        thickness: 7,
+        weight: 29,
+        diametr: 580,
+        length: 1700,
+    },
+    {
+        displacement: 500,
+        load: 350,
+        thickness: 7,
+        weight: 33,
+        diametr: 580,
+        length: 2100,
+    },
+    {
+        displacement: 700,
+        load: 500,
+        thickness: 7,
+        weight: 30,
+        diametr: 760,
+        length: 1800,
+    },
+    {
+        displacement: 1100,
+        load: 770,
+        thickness: 7,
+        weight: 45,
+        diametr: 760,
+        length: 2600,
+    },
+];
+
 export const floatsImage = [
     poplavki,
     ploshchadka,
