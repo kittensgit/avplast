@@ -26,3 +26,29 @@
 .floats img:hover {
     transform: scale(1.05);
 }
+
+@media (max-width: 800px) {
+    .caption {
+        font-size: 30px;
+        padding: 25px;
+    }
+    .text {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 700px) {
+    .caption {
+        font-size: 28px;
+        padding: 20px;
+    }
+    .text {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 500px) {
+    .caption {
+        font-size: 26px;
+    }
+}

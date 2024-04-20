@@ -44,6 +44,10 @@ const PontoonSystemsContent: FC = () => {
                 custom={1}
                 variants={textAnimation}
                 className={styles.fact}
+                viewport={{
+                    once: true,
+                    amount: 0.1,
+                }}
             >
                 <img src={factIcon} alt="факт" />
                 <p>
@@ -58,6 +62,10 @@ const PontoonSystemsContent: FC = () => {
                 whileInView="visible"
                 custom={1}
                 variants={textAnimation}
+                viewport={{
+                    once: true,
+                    amount: 0.1,
+                }}
                 className={styles.caption}
             >
                 Примеры типовых решений на базе плавучих модулей
@@ -69,6 +77,10 @@ const PontoonSystemsContent: FC = () => {
                 custom={1}
                 variants={textAnimation}
                 className={styles.fact}
+                viewport={{
+                    once: true,
+                    amount: 0.1,
+                }}
             >
                 <img src={factIcon} alt="факт" />
                 <p>

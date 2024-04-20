@@ -47,3 +47,35 @@
 .info li {
     font-size: 20px;
 }
+
+@media (max-width: 940px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+    .decor {
+        bottom: 2%;
+    }
+}
+@media (max-width: 700px) {
+    .info h5 {
+        font-size: 24px;
+    }
+    .info ul li {
+        font-size: 19px;
+    }
+}
+@media (max-width: 500px) {
+    .info h5 {
+        font-size: 22px;
+    }
+    .info ul li {
+        font-size: 18px;
+    }
+    .decor {
+        width: 65px;
+        height: 65px;
+    }
+}

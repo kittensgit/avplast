@@ -75,3 +75,22 @@
     top: 44%;
     right: 0;
 }
+
+@media (max-width: 800px) {
+    .caption {
+        font-size: 30px;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 700px) {
+    .caption {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 500px) {
+    .caption {
+        font-size: 26px;
+    }
+}

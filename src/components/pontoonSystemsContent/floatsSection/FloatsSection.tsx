@@ -27,6 +27,10 @@ const FloatsSection: FC = () => {
             initial="hidden"
             whileInView="visible"
             variants={textAnimation}
+            viewport={{
+                once: true,
+                amount: 0.1,
+            }}
         >
             <h2 className={styles.caption}>Поплавки и поплавковые системы</h2>
             <motion.p
