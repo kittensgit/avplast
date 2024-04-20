@@ -5,8 +5,6 @@ import { reservoirsAndPoolsData } from 'data/ReservoirsPoolsData';
 
 import ReservoirsAndPoolsCard from './reservoirsAndPoolsCard/ReservoirsAndPoolsCard';
 
-import styles from './ReservoirsAndPoolsCards.module.css';
-
 const ReservoirsAndPoolsCards: FC = () => {
     const cardsAnimation = {
         hidden: {
@@ -25,7 +23,7 @@ const ReservoirsAndPoolsCards: FC = () => {
         },
     };
     return (
-        <motion.div variants={cardsAnimation} className={styles.wrapper}>
+        <motion.div variants={cardsAnimation}>
             {reservoirsAndPoolsData.map((item, index) => (
                 <ReservoirsAndPoolsCard
                     key={index}
