@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from 'react';
+import { FC, Suspense, useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import Header from 'components/common/header/Header';
@@ -31,16 +31,18 @@ const App: FC = () => {
         <div className="app">
             <Header />
             <main className="main_wrapper">
-                <Routes>
-                    {routes.map((route, index) => (
-                        <Route
-                            key={index}
-                            path={route.path}
-                            element={<route.component />}
-                        />
-                    ))}
-                    <Route path="*" element={<div>Not Found Page</div>} />
-                </Routes>
+                <Suspense fallback={<div>Loading...</div>}>
+                    <Routes>
+                        {routes.map((route, index) => (
+                            <Route
+                                key={index}
+                                path={route.path}
+                                element={<route.component />}
+                            />
+                        ))}
+                        <Route path="*" element={<div>Not Found Page</div>} />
+                    </Routes>
+                </Suspense>
                 <ScrollBtn showScrollButton={showScrollButton} />
             </main>
             <Footer />
