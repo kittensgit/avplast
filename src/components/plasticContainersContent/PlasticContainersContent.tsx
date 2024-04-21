@@ -33,11 +33,11 @@ const PlasticContainersContent: FC = () => {
             variants={textAnimation}
             className={styles.wrapper}
         >
-            {/* <AboutSection /> */}
-            {/* <VerticalContainersSection /> */}
-            {/* <HorizontalContainersSection /> */}
+            <AboutSection />
+            <VerticalContainersSection />
+            <HorizontalContainersSection />
             <TransportationContainersSection />
-            {/* <motion.a
+            <motion.a
                 initial="hidden"
                 whileInView="visible"
                 viewport={{
@@ -50,7 +50,7 @@ const PlasticContainersContent: FC = () => {
                 href="#!"
             >
                 Посмотреть или скачать прайс
-            </motion.a> */}
+            </motion.a>
         </motion.div>
     );
 };

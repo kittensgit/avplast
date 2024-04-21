@@ -31,3 +31,8 @@
         font-size: 28px;
     }
 }
+@media (max-width: 500px) {
+    .title {
+        font-size: 26px;
+    }
+}

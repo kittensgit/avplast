@@ -42,6 +42,9 @@
     }
 }
 @media (max-width: 500px) {
+    .title {
+        font-size: 26px;
+    }
     .list {
         padding-left: 40px;
     }
