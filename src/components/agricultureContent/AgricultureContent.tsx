@@ -39,10 +39,10 @@ const AgricultureContent: FC = () => {
             {/* <AboutSection />
             <SprayerCapacitySection />
             <PigsWaterersSection />
-            <BunkerFeedersPigsSection /> */}
-            <CattleWaterersSection />
-            {/* <SlottedFloorPalletsSection />
-            <SlottedFloorsSection />
+            <BunkerFeedersPigsSection />
+            <CattleWaterersSection /> */}
+            <SlottedFloorPalletsSection />
+            {/* <SlottedFloorsSection />
             <motion.a
                 initial="hidden"
                 whileInView="visible"
