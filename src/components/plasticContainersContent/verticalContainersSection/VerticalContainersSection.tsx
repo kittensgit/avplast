@@ -67,8 +67,8 @@ const VerticalContainersSection: FC = () => {
                 смотрового люка и резьбовыми отверстиями различных диаметров, в
                 зависимости от конфигурации.
             </motion.p>
-            <Table tableData={verticalContainersTableData} />
-            <Slider sliderData={verticalContainersSliderData} slidesCount={4} />
+            {/* <Table tableData={verticalContainersTableData} /> */}
+            {/* <Slider sliderData={verticalContainersSliderData} slidesCount={4} /> */}
         </motion.div>
     );
 };
