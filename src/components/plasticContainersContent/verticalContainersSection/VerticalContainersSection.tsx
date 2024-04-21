@@ -68,7 +68,7 @@ const VerticalContainersSection: FC = () => {
                 зависимости от конфигурации.
             </motion.p>
             <Table tableData={verticalContainersTableData} />
-            {/* <Slider sliderData={verticalContainersSliderData} slidesCount={4} /> */}
+            <Slider sliderData={verticalContainersSliderData} slidesCount={4} />
         </motion.div>
     );
 };

@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -16,6 +16,28 @@ interface SliderProps {
 }
 
 const Slider: FC<SliderProps> = ({ sliderData, slidesCount }) => {
+    const [perPage, setPerPage] = useState(slidesCount);
+
+    useEffect(() => {
+        const updatePerPage = () => {
+            const newPerPage =
+                window.innerWidth < 600
+                    ? 1
+                    : window.innerWidth < 820
+                    ? 2
+                    : window.innerWidth < 1200
+                    ? 3
+                    : slidesCount;
+
+            setPerPage(newPerPage);
+        };
+        updatePerPage();
+        window.addEventListener('resize', updatePerPage);
+        return () => {
+            window.removeEventListener('resize', updatePerPage);
+        };
+    }, [slidesCount]);
+
     const wrapperAnimation = {
         hidden: {
             y: -10,
@@ -43,7 +65,7 @@ const Slider: FC<SliderProps> = ({ sliderData, slidesCount }) => {
         >
             <Swiper
                 className={styles.swiper}
-                slidesPerView={slidesCount}
+                slidesPerView={perPage}
                 spaceBetween={20}
                 autoplay={{
                     delay: 4500,

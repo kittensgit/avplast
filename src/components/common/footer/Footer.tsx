@@ -4,12 +4,19 @@ import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 
 const Footer: FC = () => {
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+    };
     return (
         <footer className={styles.footer}>
             <div className="container">
                 <div className={styles.footer_content}>
                     <div className={styles.footer_item}>
-                        <Link className={styles.footer_logo} to={'/'}>
+                        <Link
+                            className={styles.footer_logo}
+                            to={'/'}
+                            onClick={scrollToTop}
+                        >
                             <strong className={styles.logo}>
                                 <span>AV</span>plast
                             </strong>

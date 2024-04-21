@@ -33,10 +33,10 @@ const PlasticContainersContent: FC = () => {
             variants={textAnimation}
             className={styles.wrapper}
         >
-            {/* <AboutSection /> */}
+            <AboutSection />
             <VerticalContainersSection />
-            {/* <HorizontalContainersSection />
-            <TransportationContainersSection />
+            {/* <HorizontalContainersSection /> */}
+            {/* <TransportationContainersSection />
             <motion.a
                 initial="hidden"
                 whileInView="visible"
