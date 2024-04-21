@@ -67,14 +67,18 @@ const Table: FC<TableProps> = ({ tableData }) => {
                         custom={index + 1}
                         key={index}
                     >
-                        <td>{item.name}</td>
-                        <td>{item.volume}</td>
-                        <td>{item.height}</td>
-                        <td>{item.width}</td>
-                        <td>{item.length}</td>
-                        <td>{item.diametr}</td>
-                        <td>{item.thickness}</td>
-                        <td>{item.weigth}</td>
+                        <td data-title="Наименование">{item.name}</td>
+                        <td data-title="Объем, л">{item.volume}</td>
+                        <td data-title="Высота, мм">{item.height}</td>
+                        <td data-title="Ширина диаметр, мм">{item.width}</td>
+                        <td data-title="Длина, мм">{item.length}</td>
+                        <td data-title="Диаметр горловины, мм">
+                            {item.diametr}
+                        </td>
+                        <td data-title="Толщина стенки, мм">
+                            {item.thickness}
+                        </td>
+                        <td data-title="Вес, кг">{item.weigth}</td>
                     </motion.tr>
                 ))}
             </tbody>

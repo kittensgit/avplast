@@ -33,3 +33,49 @@
     vertical-align: middle;
     line-height: 125%;
 }
+
+@media (max-width: 1000px) {
+    .table {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 900px) {
+    .table {
+        width: 100%;
+        font-size: 18px;
+        border: 3px solid #e6f1ff;
+    }
+    .table thead tr {
+        display: none;
+    }
+    .table tr {
+        display: block;
+    }
+
+    .table td {
+        text-align: right;
+        display: block;
+    }
+    .table td::before {
+        content: attr(data-title) ': ';
+        float: left;
+        color: #285d8a;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 500px) {
+    .table {
+        font-size: 17px;
+    }
+    .table tbody tr td {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 420px) {
+    .table {
+        font-size: 16px;
+    }
+}
