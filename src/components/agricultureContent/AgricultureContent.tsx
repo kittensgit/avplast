@@ -36,11 +36,11 @@ const AgricultureContent: FC = () => {
             variants={textAnimation}
             className={styles.wrapper}
         >
-            {/* <AboutSection /> */}
-            {/* <SprayerCapacitySection /> */}
-            <PigsWaterersSection />
-            {/* <BunkerFeedersPigsSection />
-            <CattleWaterersSection />
+            {/* <AboutSection />
+            <SprayerCapacitySection />
+            <PigsWaterersSection /> */}
+            <BunkerFeedersPigsSection />
+            {/* <CattleWaterersSection />
             <SlottedFloorPalletsSection />
             <SlottedFloorsSection />
             <motion.a
