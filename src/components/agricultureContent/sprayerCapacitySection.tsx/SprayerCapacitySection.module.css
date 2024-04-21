@@ -2,7 +2,7 @@
     font-weight: 700;
     font-size: 32px;
     text-align: center;
-    padding: 30px;
+    padding: 30px 20px;
 }
 
 .caption {
@@ -16,4 +16,42 @@
     line-height: 150%;
     list-style: circle;
     font-size: 20px;
+}
+
+@media (max-width: 900px) {
+    .title {
+        font-size: 30px;
+        padding: 25px 15px;
+    }
+    .caption {
+        font-size: 22px;
+        padding: 15px 0;
+    }
+    .list {
+        font-size: 19px;
+    }
+}
+@media (max-width: 700px) {
+    .title {
+        font-size: 28px;
+        padding: 20px 15px;
+    }
+    .caption {
+        padding: 10px 0;
+    }
+    .list {
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 26px;
+    }
+    .caption {
+        font-size: 20px;
+    }
+    .list {
+        font-size: 18px;
+    }
 }
