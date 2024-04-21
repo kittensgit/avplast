@@ -48,7 +48,7 @@ const CattleWaterersSection: FC = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{
-                amount: 0.2,
+                amount: 0.1,
                 once: true,
             }}
             variants={wrapperAnimation}
