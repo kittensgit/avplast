@@ -50,39 +50,6 @@
     color: #285d8a;
 }
 
-.table {
-    width: 100%;
-    text-align: center;
-    font-size: 18px;
-    margin: 20px 0;
-}
-
-.table thead tr th {
-    background-color: #d8e8ff;
-    padding: 20px 10px;
-    text-transform: uppercase;
-    font-weight: 700;
-    vertical-align: middle;
-}
-
-.table tbody tr {
-    transition: all 0.2s ease-in;
-}
-
-.table tr:nth-child(even) {
-    background-color: #e6f1ff;
-}
-
-.table tr:hover {
-    background-color: #d0def2;
-}
-
-.table tbody tr td {
-    padding: 20px;
-    vertical-align: middle;
-    line-height: 125%;
-}
-
 .link {
     display: inline-block;
     font-weight: 600;
@@ -99,22 +66,18 @@
     background-size: cover;
     width: 40px;
     height: 40px;
-    top: 44%;
+    bottom: -6px;
     right: 0;
 }
 
-@media (max-width: 900px) {
-    .table {
-        font-size: 17px;
-    }
-}
 @media (max-width: 800px) {
     .caption {
         font-size: 30px;
         padding: 25px;
     }
-    .table {
-        font-size: 16px;
+
+    .link {
+        padding-top: 15px;
     }
 }
 
@@ -128,6 +91,14 @@
     .fact p {
         text-align: center;
     }
+    .link {
+        font-size: 24px;
+        padding-right: 45px;
+    }
+    .link::after {
+        width: 35px;
+        height: 35px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -139,5 +110,25 @@
     }
     .fact p {
         font-size: 19px;
+    }
+    .link {
+        font-size: 20px;
+        padding-right: 40px;
+    }
+    .link::after {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .link {
+        font-size: 18px;
+        padding-right: 35px;
+    }
+    .link::after {
+        width: 25px;
+        height: 25px;
+        bottom: -4px;
     }
 }
