@@ -35,9 +35,9 @@ const PlasticContainersContent: FC = () => {
         >
             {/* <AboutSection /> */}
             {/* <VerticalContainersSection /> */}
-            <HorizontalContainersSection />
-            {/* <TransportationContainersSection />
-            <motion.a
+            {/* <HorizontalContainersSection /> */}
+            <TransportationContainersSection />
+            {/* <motion.a
                 initial="hidden"
                 whileInView="visible"
                 viewport={{
