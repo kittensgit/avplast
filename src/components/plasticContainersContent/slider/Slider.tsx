@@ -20,14 +20,24 @@ const Slider: FC<SliderProps> = ({ sliderData, slidesCount }) => {
 
     useEffect(() => {
         const updatePerPage = () => {
-            const newPerPage =
-                window.innerWidth < 600
-                    ? 1
-                    : window.innerWidth < 820
-                    ? 2
-                    : window.innerWidth < 1200
-                    ? 3
-                    : slidesCount;
+            let newPerPage = 0;
+            if (slidesCount === 4) {
+                newPerPage =
+                    window.innerWidth < 600
+                        ? 1
+                        : window.innerWidth < 820
+                        ? 2
+                        : window.innerWidth < 1200
+                        ? 3
+                        : slidesCount;
+            } else {
+                newPerPage =
+                    window.innerWidth < 700
+                        ? 1
+                        : window.innerWidth < 1020
+                        ? 2
+                        : slidesCount;
+            }
 
             setPerPage(newPerPage);
         };

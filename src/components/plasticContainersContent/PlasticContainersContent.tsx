@@ -33,9 +33,9 @@ const PlasticContainersContent: FC = () => {
             variants={textAnimation}
             className={styles.wrapper}
         >
-            <AboutSection />
-            <VerticalContainersSection />
-            {/* <HorizontalContainersSection /> */}
+            {/* <AboutSection /> */}
+            {/* <VerticalContainersSection /> */}
+            <HorizontalContainersSection />
             {/* <TransportationContainersSection />
             <motion.a
                 initial="hidden"
