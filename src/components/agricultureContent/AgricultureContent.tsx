@@ -40,10 +40,10 @@ const AgricultureContent: FC = () => {
             <SprayerCapacitySection />
             <PigsWaterersSection />
             <BunkerFeedersPigsSection />
-            <CattleWaterersSection /> */}
-            <SlottedFloorPalletsSection />
-            {/* <SlottedFloorsSection />
-            <motion.a
+            <CattleWaterersSection />
+            <SlottedFloorPalletsSection /> */}
+            <SlottedFloorsSection />
+            {/* <motion.a
                 initial="hidden"
                 whileInView="visible"
                 viewport={{
