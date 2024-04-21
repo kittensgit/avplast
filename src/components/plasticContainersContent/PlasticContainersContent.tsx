@@ -34,7 +34,7 @@ const PlasticContainersContent: FC = () => {
             className={styles.wrapper}
         >
             <AboutSection />
-            <VerticalContainersSection />
+            {/* <VerticalContainersSection />
             <HorizontalContainersSection />
             <TransportationContainersSection />
             <motion.a
@@ -50,7 +50,7 @@ const PlasticContainersContent: FC = () => {
                 href="#!"
             >
                 Посмотреть или скачать прайс
-            </motion.a>
+            </motion.a> */}
         </motion.div>
     );
 };
