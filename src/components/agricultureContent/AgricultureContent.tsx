@@ -36,14 +36,14 @@ const AgricultureContent: FC = () => {
             variants={textAnimation}
             className={styles.wrapper}
         >
-            {/* <AboutSection />
+            <AboutSection />
             <SprayerCapacitySection />
             <PigsWaterersSection />
             <BunkerFeedersPigsSection />
             <CattleWaterersSection />
-            <SlottedFloorPalletsSection /> */}
+            <SlottedFloorPalletsSection />
             <SlottedFloorsSection />
-            {/* <motion.a
+            <motion.a
                 initial="hidden"
                 whileInView="visible"
                 viewport={{
@@ -56,7 +56,7 @@ const AgricultureContent: FC = () => {
                 href="#!"
             >
                 Посмотреть или скачать прайс
-            </motion.a> */}
+            </motion.a>
         </motion.div>
     );
 };
