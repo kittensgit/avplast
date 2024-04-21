@@ -37,9 +37,9 @@ const AgricultureContent: FC = () => {
             className={styles.wrapper}
         >
             {/* <AboutSection /> */}
-            <SprayerCapacitySection />
-            {/* <PigsWaterersSection />
-            <BunkerFeedersPigsSection />
+            {/* <SprayerCapacitySection /> */}
+            <PigsWaterersSection />
+            {/* <BunkerFeedersPigsSection />
             <CattleWaterersSection />
             <SlottedFloorPalletsSection />
             <SlottedFloorsSection />
