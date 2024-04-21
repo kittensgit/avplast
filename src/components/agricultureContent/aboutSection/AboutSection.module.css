@@ -34,3 +34,56 @@
     list-style: circle;
     font-size: 20px;
 }
+
+@media (max-width: 900px) {
+    .title {
+        font-size: 34px;
+        padding-bottom: 15px;
+    }
+    .about::after {
+        opacity: 0.1;
+        top: 20%;
+    }
+    .list {
+        padding: 10px 0 10px 50px;
+    }
+    .text {
+        padding: 8px;
+    }
+}
+@media (max-width: 700px) {
+    .about::after {
+        top: 25%;
+    }
+    .title {
+        font-size: 32px;
+        padding-bottom: 10px;
+    }
+    .list {
+        padding: 8px 0 8px 40px;
+    }
+    .text {
+        padding: 5px;
+    }
+}
+@media (max-width: 500px) {
+    .title {
+        font-size: 28px;
+    }
+    .about::after {
+        top: 30%;
+    }
+}
+@media (max-width: 430px) {
+    .about::after {
+        width: 300px;
+        height: 300px;
+        top: 35%;
+    }
+    .title {
+        font-size: 25px;
+    }
+    .text {
+        font-size: 19px;
+    }
+}

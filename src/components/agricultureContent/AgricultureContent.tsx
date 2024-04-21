@@ -37,7 +37,7 @@ const AgricultureContent: FC = () => {
             className={styles.wrapper}
         >
             <AboutSection />
-            <SprayerCapacitySection />
+            {/* <SprayerCapacitySection />
             <PigsWaterersSection />
             <BunkerFeedersPigsSection />
             <CattleWaterersSection />
@@ -56,7 +56,7 @@ const AgricultureContent: FC = () => {
                 href="#!"
             >
                 Посмотреть или скачать прайс
-            </motion.a>
+            </motion.a> */}
         </motion.div>
     );
 };
