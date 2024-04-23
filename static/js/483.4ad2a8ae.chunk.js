@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkavplast=self.webpackChunkavplast||[]).push([[483],{8483:(a,s,e)=>{e.r(s),e.d(s,{default:()=>t});var l=e(579);const t=()=>(0,l.jsx)("div",{children:"PlasticTanksRepair"})}}]);
+//# sourceMappingURL=483.4ad2a8ae.chunk.js.map
