@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import Header from 'components/common/header/Header';
 import Footer from 'components/common/footer/Footer';
 import ScrollBtn from 'components/common/scrollBtn/ScrollBtn';
+import Loading from 'components/common/loading/Loading';
 
 import { routes } from 'routes/routes';
 
@@ -31,7 +32,7 @@ const App: FC = () => {
         <div className="app">
             <Header />
             <main className="main_wrapper">
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<Loading />}>
                     <Routes>
                         {routes.map((route, index) => (
                             <Route

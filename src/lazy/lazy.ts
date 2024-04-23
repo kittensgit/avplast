@@ -13,4 +13,6 @@ export const LazyReservoirsAndPools = lazy(
 export const LazyRotaryMolding = lazy(() => import('pages/RotaryMolding'));
 export const LazyPontoonSystems = lazy(() => import('pages/PontoonSystems'));
 export const LazyAgriculture = lazy(() => import('pages/Agriculture'));
-export const LazyPlasticContainers = lazy(() => import('pages/Home'));
+export const LazyPlasticContainers = lazy(
+    () => import('pages/PlasticContainers')
+);

@@ -21,6 +21,7 @@ interface Route {
 
 export const routes: Route[] = [
     { path: '/', component: LazyHome },
+    { path: '/avplast', component: LazyHome },
     { path: '/services', component: LazyServices },
     { path: '/production', component: LazyProduction },
     { path: '/contacts', component: LazyContacts },
